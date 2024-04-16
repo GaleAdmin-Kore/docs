@@ -18,7 +18,7 @@
     
     
       
-        <title>Manage flow nodes - Kore ai Docs</title>
+        <title>Manage Agent's flow nodes - Kore ai Docs</title>
       
     
     
@@ -89,6 +89,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#manage-agents-flow-nodes" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -248,7 +253,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Manage flow nodes
+              Manage Agent's flow nodes
             
           </span>
         </div>
@@ -1825,6 +1830,70 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-a-new-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a new node
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rename-a-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rename a node
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rearrange-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rearrange nodes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connect nodes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-node-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete a node connections
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete a node
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1842,9 +1911,75 @@
   
 
 
-  <h1>Manage flow nodes</h1>
-
-
+<h1 id="manage-agents-flow-nodes">Manage Agent's flow nodes<a class="headerlink" href="#manage-agents-flow-nodes" title="Permanent link">&para;</a></h1>
+<h3 id="add-a-new-node">Add a new node<a class="headerlink" href="#add-a-new-node" title="Permanent link">&para;</a></h3>
+<p>The Start node is the starting point of any flow and is available by default. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.</p>
+<p><strong>To add a node to the flow builder canvas, follow these steps</strong>:</p>
+<ul>
+<li>
+<p>Do one of the following:</p>
+<ul>
+<li>
+<p>Click the “+” icon and select a node from the pop-up menu.</p>
+<p><a class="glightbox" href="../images/add-a-new-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-node.png" alt="Add a New Node" title="Add a New Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Drag nodes from within the <strong>Assets</strong> panel on the left navigation bar onto the canvas.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="rename-a-node">Rename a node<a class="headerlink" href="#rename-a-node" title="Permanent link">&para;</a></h3>
+<p>You can rename and set a desired name of your preference.</p>
+<p><strong>To rename a node, follow these steps</strong>:</p>
+<ul>
+<li>
+<p>Right-click on the required node. A pop-up with a list of options is displayed.</p>
+<p><a class="glightbox" href="../images/Rename a Node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/Rename a Node.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Click the <strong>Rename</strong> option from the list of options to modify the name.</p>
+</li>
+</ul>
+<h3 id="rearrange-nodes">Rearrange nodes<a class="headerlink" href="#rearrange-nodes" title="Permanent link">&para;</a></h3>
+<p>To rearrange nodes on your canvas, drag and drop them to the desired location as shown in the following demo:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only the node that you are dragging will change position. Any connecting nodes will remain in place, regardless of the direction of their connection.</p>
+</div>
+<p><a class="glightbox" href="../images/rearrange-a-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/rearrange-a-node.png" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You right-click anywhere on the canvas and can perform some other actions on the canvas such as Changing the background color of the canvas, Show /Hide UI, and Show /Hide Grid by.</p>
+</div>
+<h3 id="connect-nodes">Connect nodes<a class="headerlink" href="#connect-nodes" title="Permanent link">&para;</a></h3>
+<p>Node connections are either made within the configuration of each node or by dragging and dropping the nodes on the canvas You can also connect nodes from the property panel of the node while defining the settings for success and failure. That will also automatically connect the nodes.</p>
+<p><strong>The steps are the following</strong>:</p>
+<ol>
+<li>Click the grey dot that displays next to the node.</li>
+<li>Drag your cursor over the grey dot displayed on top of the connecting node and release.</li>
+<li>A line is drawn between the nodes, with an arrow indicating the direction of the node connection.</li>
+<li>
+<p>You can change the destination node by clicking the grey dot on top of the initial destination node and then dragging the connection line to the grey dot on top of the new destination node.</p>
+<p><a class="glightbox" href="../images/connect-nodes.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/connect-nodes.png" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+</ol>
+<h3 id="delete-a-node-connections">Delete a node connections<a class="headerlink" href="#delete-a-node-connections" title="Permanent link">&para;</a></h3>
+<p><strong>To delete a node connection, follow these steps</strong>:</p>
+<ol>
+<li>To delete node connections, click the line connecting two nodes and a Delete icon is displayed.</li>
+<li>
+<p>Click the <strong>Delete</strong> icon to delete the connection.</p>
+<p>The nodes remain on the canvas but will not be connected anymore. To ensure a working flow, you must create another connection between the nodes.</p>
+</li>
+</ol>
+<h3 id="delete-a-node">Delete a node<a class="headerlink" href="#delete-a-node" title="Permanent link">&para;</a></h3>
+<p>You can delete a node if you no longer require it.</p>
+<p><strong>To delete a node, follow these steps</strong>:</p>
+<ul>
+<li>Right-click on the required node. A pop-up with a list of options is displayed.</li>
+<li>Click <strong>Delete</strong> from the list of options and the node is deleted.</li>
+</ul>
 
 
 

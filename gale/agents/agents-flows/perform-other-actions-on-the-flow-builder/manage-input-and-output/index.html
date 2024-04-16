@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#manage-input-and-output" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1825,6 +1830,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1842,9 +1849,49 @@
   
 
 
-  <h1>Manage input and output</h1>
-
-
+<h1 id="manage-input-and-output">Manage input and output<a class="headerlink" href="#manage-input-and-output" title="Permanent link">&para;</a></h1>
+<p>You can initiate a fresh agent flow and specify the inputs required to initialize the process. Within the starting node, essential variables necessary for the flow's execution are received from the front end through API requests. Correspondingly, the end node gathers outputs from the preceding nodes and transmits them for utilization by the front end as an API.</p>
+<p>Once the input and output variables have been defined, they become accessible within the context objects and can be utilized throughout the flow's progression.</p>
+<p><strong>To manage input variables, follow these steps</strong>:</p>
+<ol>
+<li>
+<p>Click the <strong>Manage I/O</strong> button on the top of the canvas of the Agents page.</p>
+<p>The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
+<p><a class="glightbox" href="../images/manage-input-output-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Click the <strong>+ Add input variable</strong> button under the <strong>Input</strong> tab.</p>
+<p>The <strong>Enter input variable</strong> dialog is displayed.</p>
+<p><a class="glightbox" href="../images/enter-input-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-input-variable.png" alt="Enter Input Variable" title="Enter Input Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Enter a <strong>Name(key)</strong> to the input variable.</p>
+</li>
+<li>Select a data type from the <strong>Type</strong> drop-down list. If you want to make the data type mandatory, then move the <strong>Mandatory</strong> toggle button.</li>
+<li>You can Enable the <strong>Default value</strong> toggle button to add a Default value for the input variable. You can set a default value for this input variable. If the value is not provided, then the flow automatically selects this default value.</li>
+<li>Click <strong>Save</strong>. The Input variable is displayed in the list on the <strong>Manage Input &amp; Output</strong> dialog.</li>
+</ol>
+<p><strong>To manage output variables, follow these steps</strong>:</p>
+<ol>
+<li>
+<p>Click the <strong>Manage I/O</strong> button on the top of the canvas of the Agents page.</p>
+<p>The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
+</li>
+<li>
+<p>Click the <strong>+ Add output variable</strong> button under the <strong>Output</strong> tab.</p>
+<p>The <strong>Enter Output variable</strong> dialog is displayed.</p>
+<p><a class="glightbox" href="../images/enter-output-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-output-variable.png" alt="Enter Output Variable" title="Enter Output Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Enter a <strong>Name(key)</strong> to the input variable.</p>
+</li>
+<li>Select a data type from the <strong>Type</strong> drop-down list.</li>
+<li>Click <strong>Save</strong>. The Output variable is displayed in the list on the <strong>Manage Input &amp; Output</strong> dialog.</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can create multiple output variables based on your use case.</p>
+</div>
 
 
 
