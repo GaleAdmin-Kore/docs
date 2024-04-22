@@ -94,6 +94,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#configure-an-agent" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1871,6 +1876,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configure an Agent
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1881,6 +1899,45 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an Environment Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-or-delete-an-environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit or Delete an Environment Variable
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2333,7 +2390,7 @@
         
   
   <span class="md-ellipsis">
-    Add an External Model
+    Add an External Model using Easy Integration
   </span>
   
 
@@ -2354,7 +2411,7 @@
         
   
   <span class="md-ellipsis">
-    Add an External Model
+    Add an External Model using API Integration
   </span>
   
 
@@ -2797,6 +2854,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#add-an-environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add an Environment Variable
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edit-or-delete-an-environment-variable" class="md-nav__link">
+    <span class="md-ellipsis">
+      Edit or Delete an Environment Variable
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2814,9 +2899,43 @@
   
 
 
-  <h1>Configure an Agent</h1>
-
-
+<h1 id="configure-an-agent">Configure an Agent<a class="headerlink" href="#configure-an-agent" title="Permanent link">&para;</a></h1>
+<p>You can modify and manage the general details of your agent if required and add or manage environment variables. Environment variables allow you to capture commonly used values that different nodes can use. They can be secured and managed from the Agent Configurations page.</p>
+<h3 id="add-an-environment-variable">Add an Environment Variable<a class="headerlink" href="#add-an-environment-variable" title="Permanent link">&para;</a></h3>
+<p><strong>To add an environment variable, follow these steps</strong>:</p>
+<ol>
+<li>Click <strong>Agents</strong> on the top navigation bar of the application. The <strong>Agents</strong> page is displayed with the list of agents.</li>
+<li>
+<p>Click the required Agent you want to modify the details, click <strong>Configurations</strong> and then click <strong>Manage environment variables</strong>.</p>
+<p><a class="glightbox" href="../images/manage-environment-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-environment-variables.png" alt="Manage Environment Variables" title="Manage Environment Variables" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>The <strong>Create environment variable</strong> dialog box is displayed. Click <strong>Add</strong> or <strong>Add variable</strong>.</p>
+</li>
+<li>
+<p>Specify the following information on the <strong>Add variable</strong> dialog box:</p>
+<p><a class="glightbox" href="..images/add-varaible.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="..images/add-varaible.png" alt="Add a Varaible" title="Add a Varaible" style="border: 1px solid gray; zoom:80%;"></a></p>
+<ul>
+<li><strong>Variable name</strong>: Provide a descriptive name for the variable.</li>
+<li><strong>Secure variable</strong>: Use the toggle to enable security for the variable. (If you are enabling the security, read the onscreen information carefully to understand the impact.)</li>
+<li><strong>Value</strong>: Enter the desired value for the variable.</li>
+<li><strong>Notes</strong> (optional): Enter any notes about how the variable should be used or its purpose.</li>
+<li>Click <strong>Save</strong>. The created variable is listed on the <strong>Create environment variable</strong> dialog box.</li>
+</ul>
+</li>
+</ol>
+<h3 id="edit-or-delete-an-environment-variable">Edit or Delete an Environment Variable<a class="headerlink" href="#edit-or-delete-an-environment-variable" title="Permanent link">&para;</a></h3>
+<p><strong>To manage a variable, follow these steps</strong>:</p>
+<ul>
+<li>
+<p>Click the three dots icon corresponding to the Name of the variable to edit the details of the variable or Delete to delete a variable.</p>
+<p><a class="glightbox" href="../images/manage-a-varaible.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To delete an agent, you must first un-deploy it and then delete it.</p>
+</div>
 
 
 

@@ -2205,6 +2205,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Select and Deploy an Open-Source Model
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -2214,6 +2225,36 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#re-deploy-a-deployed-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Re-deploy a Deployed Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2345,7 +2386,7 @@
         
   
   <span class="md-ellipsis">
-    Add an External Model
+    Add an External Model using Easy Integration
   </span>
   
 
@@ -2366,7 +2407,7 @@
         
   
   <span class="md-ellipsis">
-    Add an External Model
+    Add an External Model using API Integration
   </span>
   
 
@@ -2812,6 +2853,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#re-deploy-a-deployed-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Re-deploy a Deployed Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2828,43 +2886,120 @@
   
 
 
-<h1 id="select-and-deploy-an-open-source-model">Select and Deploy an Open-Source Model<a class="headerlink" href="#select-and-deploy-an-open-source-model" title="Permanent link">&para;</a></h1>
+<h1 id="select-and-deploy-an-open-source-model">Select and deploy an open-source model<a class="headerlink" href="#select-and-deploy-an-open-source-model" title="Permanent link">&para;</a></h1>
 <p>Currently, we support thirty-plus open-source models and provide them as a service to our users.</p>
 <p><strong>To select and deploy a model, follow these steps</strong>:</p>
 <ol>
 <li>Click <strong>Models</strong> on the top navigation bar of the application. The <strong>Models</strong> page is displayed.</li>
 <li>
-<p>Click the <strong>Open-source models</strong> tab on the <strong>Models</strong> page.</p>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click the <strong>Open-source models</strong> tab on the Models page.</p>
+<p><a class="glightbox" href="../open-source-models/images/deploy-a-model.png.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../open-source-models/images/deploy-a-model.png.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Click the <strong>Deploy a model</strong> button. A pop-up with a list of available models is displayed.</p>
 <p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Select a model from the list. For example, you can select the “<em>google/flan-t5-small</em>” model and click the model name. A deployment status alert is displayed stating that there will be inference charges once your deployment starts. Click <strong>OK</strong> to confirm with deployment.  </p>
+<p>Select and click a model from the list. The <strong>Deploy</strong> dialog is displayed.</p>
 </li>
 <li>
-<p>As you click the model name the deployment process of the model begins automatically, and the status is displayed as “Deploying” in the list of open-source models.</p>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>In the <strong>General details</strong> section:</p>
+<ul>
+<li>
+<p>Enter a <strong>Deployment name</strong> and <strong>Description</strong> for your model.</p>
 </li>
-</ol>
+<li>
+<p>Provide tags to ease the search for the model and click <strong>Next</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Parameters</strong> section:</p>
+<ul>
+<li>
+<p>Select the Sampling <strong>Temperature</strong> to use for deployment.</p>
+</li>
+<li>
+<p>Select the <strong>Maximum length</strong> which implies the maximum number of tokens to generate.</p>
+</li>
+<li>
+<p>Select the <strong>Top p</strong> which is an alternative to sampling with temperature where the model considers the results of the tokens with top_p probability mass.</p>
+</li>
+<li>
+<p>Select the <strong>Top k</strong> value which is the number of highest probability vocabulary tokens to keep for top-k-filtering.</p>
+</li>
+<li>
+<p>Enter the <strong>Stop sequences</strong> which implies that where the model will stop generating further tokens.</p>
+</li>
+<li>
+<p>Enter the <strong>Inference batch size</strong> which is used to batch the concurrent requests at the time of model inferencing.</p>
+</li>
+<li>
+<p>Select the <strong>Min replicas</strong> which is the minimum number of model replicas to be deployed.</p>
+</li>
+<li>
+<p>Select the <strong>Max replicas</strong> which is the maximum number of model replicas to auto-scale.</p>
+</li>
+<li>
+<p>Select the <strong>Scale up delay (in seconds)</strong> which is how long to wait before scaling-up replicas.</p>
+</li>
+<li>
+<p>Select the <strong>Scale down replicas (in seconds)</strong> which is how long to wait before scaling down replicas.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Next</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Hardware</strong> section:</p>
+<ul>
+<li>Select the <strong>Hardware name</strong> required for the deployment and click <strong>Next</strong>.</li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Review</strong> step, verify all the details that you provided earlier. Select the <strong>I accept all the terms and conditions</strong> check box.</p>
+<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to make any modifications, you can go to the previous step by clicking the <strong>Back</strong> button or a particular step indicator on the left panel.</p>
+</div>
+<p><strong>Note</strong>: </p>
+</li>
+<li>
+<p>Click <strong>Deploy</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You will be charged for deployment and inferencing-related costs for each open-source model.</p>
 </div>
+</li>
+</ol>
 <p>After the deployment process is complete the status is changed to “Deployed”. You can now infer this model across GALE and externally.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You will receive an email notification after your model deployment is completed and an API is generated, and it is ready to use.</p>
+<div class="language-text highlight"><pre><span></span><code>You will receive an email notification after your model deployment is completed and an API is generated, and it is ready to use.
+</code></pre></div>
 </div>
 <p>You can click the required model from the model listing as shown in the preceding image and go to the <strong>Manage</strong> page. You can find the API endpoint created for this open-source model. To use this model as a service, the generated code is helpful. You can copy it easily as shown in the following image.</p>
 <p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<div class="language-text highlight"><pre><span></span><code>!!! note
+
+    Click the three dots icon corresponding to the **Model name** under the **Open-source models** tab on the Models page. A pop-up with a list of options is displayed. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.
+</code></pre></div>
+<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click the <strong>Deployment history</strong> tab on the Deploy page to see view the history. This can be particularly useful for auditing and accountability purpose.</p>
+<h3 id="re-deploy-a-deployed-model"><strong>Re-deploy a Deployed Model</strong><a class="headerlink" href="#re-deploy-a-deployed-model" title="Permanent link">&para;</a></h3>
+<p>After initially deploying a model, if you want you can modify some parameter values and redeploy the updated model.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Click the three dots icon corresponding to the <strong>Model name</strong> under the <strong>Open-source models</strong> tab on the <strong>Models</strong> page. A pop-up with a list of options is displayed as shown in the following image. If you choose the API endpoint option, it will navigate you to the API keys section of the Model and if you select the Configurations option, it will take you to the Configurations section of the Model.</p>
+<p>To re-deploy a model you must first undeploy the existing model and then deploy the updated one. This means there will be some downtime when the model is unavailable.</p>
 </div>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><strong>To re-deploy a deployed model, follow these steps</strong>:</p>
+<ol>
+<li>Click the required model name from the Open-source models list.</li>
+<li>Click the <strong>Deploy model</strong> button. The <strong>Model Configuration</strong> page is displayed.</li>
+<li>Modify the required fields and click the Deploy button. The model is deployed and status is “Deployed”.</li>
+</ol>
 
 
 
