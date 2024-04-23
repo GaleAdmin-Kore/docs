@@ -94,6 +94,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#add-an-external-model-using-api-integration" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -2353,6 +2358,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -2802,6 +2809,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -2819,9 +2828,70 @@
   
 
 
-  <h1>Add an External Model using API Integration</h1>
-
-
+<h1 id="add-an-external-model-using-api-integration">Add an External Model using API Integration<a class="headerlink" href="#add-an-external-model-using-api-integration" title="Permanent link">&para;</a></h1>
+<p>Custom API Integration in GALE enables extensibility of use, where it allows you to bring in your models from an external ecosystem via API integration.</p>
+<p><strong>To add an external model using API integration, follow these steps</strong>:</p>
+<ol>
+<li>Click <strong>Models</strong> on the top navigation bar of the application. The <strong>Models</strong> page is displayed.</li>
+<li>
+<p>Click the <strong>External models</strong> tab on the <strong>Models</strong> page.</p>
+<p><a class="glightbox" href="../images/navigating-to-external-models.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigating-to-external-models.png" alt="Navigating to External Models" title="Navigating to External Models" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Add a model</strong> under the <strong>External models</strong> tab. The <strong>Add an external model</strong> dialog is displayed.</p>
+<p><a class="glightbox" href="../images/add-external-model-api-integration.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-external-model-api-integration.png" alt="Add External Model API Integration" title="Add External Model API Integration" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Select the <strong>Custom integration</strong> option to connect models via API integration, and click <strong>Next</strong>.</p>
+<p>The <strong>Custom API Integration</strong> dialog is displayed.</p>
+</li>
+<li>
+<p>Enter a <strong>Model name</strong> and <strong>Model endpoint URL</strong> in the respective fields.</p>
+<p><a class="glightbox" href="../images/custom-api-integration-general-details.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-general-details.png" alt="Custom API Integration General Details" title="Custom API Integration General Details" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>In the <strong>Headers</strong> section, specify the headers that need to be sent along with the request payload such as <strong>Key</strong> and <strong>Value</strong>.</p>
+<p><a class="glightbox" href="../images/custom-api-integration-headers.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-headers.png" alt="Custom API Integration Headers" title="Custom API Integration Headers" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>In the <strong>Variables</strong> section, you have 2 types:</p>
+<ul>
+<li><strong>Prompt variable</strong>: The Prompt variable is by default set to mandatory. You can Turn ON the toggle button for the System prompt and examples if required.</li>
+<li><strong>Custom variables:</strong> Click the <strong>Custom variables</strong> tab under the <strong>Variables</strong> section and click the <strong>+Custom variables</strong> button on the Custom variables section.</li>
+</ul>
+<p><a class="glightbox" href="../images/custom-api-integration-prompt-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-prompt-variable.png" alt="Custom API Integration Prompt Variable" title="Custom API Integration Prompt Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>The Add custom variable dialog is displayed. Enter the <strong>Variable name</strong>, and <strong>Display name</strong> and select the <strong>Data type</strong>.</p>
+<p><a class="glightbox" href="../images/add-custom-variable.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-custom-variable.png" alt="Add Custom Variable" title="Add Custom Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>In the <strong>Body</strong> section, request body of the model you are trying to connect with in GALE.</p>
+<p><a class="glightbox" href="../images/custom-api-integration-body.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-api-integration-body.png" alt="Custom API Integration Body" title="Custom API Integration Body" style="border: 1px solid gray; zoom:80%;"></a>
+1. In the <strong>Test response</strong> section, you need to provide a test response from the model:</p>
+<ul>
+<li>Click the <strong>Test</strong> button under the <strong>Test</strong> section on the <strong>Custom API Integration</strong> dialog.
+   The <strong>Sample Input</strong> dialog is displayed.</li>
+</ul>
+<p><a class="glightbox" href="../images/test-sample.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-sample.png" alt="Test Sample" title="Test Sample" style="border: 1px solid gray; zoom:80%;"></a></p>
+<ul>
+<li>Enter a <strong>Prompt</strong>, <strong>Sample prompt</strong>, and <strong>Examples</strong> in the respective fields.</li>
+</ul>
+</li>
+<li>
+<p>Once the response is generated after the Test, you can configure the <strong>JSON path</strong> to capture the output path, Input tokens, and Output tokens.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Click the <strong>Save as draft</strong> button to save the model and the status is saved as Draft.</p>
+</div>
+</li>
+<li>
+<p>Click <strong>Confirm</strong> to save the details and your external model is listed in the External model's list. The model can now be used in the playground and the Gen AI node of the agent flow builder.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can click the 3 dots icon corresponding to the Model name in the list of external models and edit or delete the model.</p>
+</div>
+<p><a class="glightbox" href="../images/three-dots-icon-options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/three-dots-icon-options.png" alt="Three Dots Icon Options" title="Three Dots Icon Options" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+</ol>
 
 
 

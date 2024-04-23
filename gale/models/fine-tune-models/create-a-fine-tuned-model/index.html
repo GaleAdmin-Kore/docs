@@ -2844,7 +2844,7 @@
 <ol>
 <li>
 <p>Click <strong>Models</strong> on the top navigation bar of the application. The <strong>Models</strong> page is displayed.</p>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/create-fine-tune-model.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/create-fine-tune-model.png" alt="Create Fine-Tune Model" title="Create Fine-Tune Model" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Click the <strong>Create a fine-tuned model</strong> button on the <strong>Models</strong> page. The <strong>Create a fine-tuned model</strong> dialog is displayed.</p>
@@ -2854,7 +2854,7 @@
 <ul>
 <li>
 <p>Enter a <strong>Name</strong> and <strong>Description</strong> for your fine-tuned model.</p>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/general-details-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/general-details-section.png" alt="General Details Section" title="General Details Section" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Provide tags to ease the search for the model and click <strong>Next</strong>.</p>
@@ -2868,6 +2868,7 @@
 <ul>
 <li>Select Hugging Face connection. For more information about how to connect to Hugging Face account, see <a href="../../integrations/how-to-to-connect-to-your-hugging-face-account.md">How to Connect to your Hugging Face Account</a>.</li>
 </ul>
+<p><a class="glightbox" href="../images/general-details-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/general-details-section.png" alt="Base Model Section" title="Base Model Section" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>In the <strong>Fine-Tuning configuration</strong> section:</p>
@@ -2877,7 +2878,7 @@
 </li>
 <li>
 <p>Enter the <strong>Number of Epochs</strong> which implies the number of times the entire data set is passed through the model during the training process.</p>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/fine-tuning-configuration-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/fine-tuning-configuration-section.png" alt="Fine-Tuning Configuration Section" title="Fine-Tuning Configuration Section" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Enter a number for <strong>Batch size</strong> which implies the number of training examples used in one iteration of training.</p>
@@ -2902,7 +2903,7 @@
 <ul>
 <li>
 <p>Define the data for evaluation. You can use the same training data set in the evaluation process as well. In this step, you can either allocate a percentage of the training dataset to use for evaluation, or upload a new evaluation dataset, or skip the evaluation.</p>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/dataset-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/dataset-section.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Click <strong>Next</strong> to proceed to the next step.</p>
@@ -2916,9 +2917,9 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The format accepted is JSONL, CSV, or JSON.</p>
+<p>The format accepted is JSONL, CSV, or JSON. </p>
 </div>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/test-data-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-data-section.png" alt=" Test Data Section" title="Test Data Section" style="border: 1px solid gray; zoom:80%;"></a></p>
 <ul>
 <li>Click <strong>Next</strong> to proceed to the next step.</li>
 </ul>
@@ -2928,21 +2929,26 @@
 </div>
 <p>In the <strong>Hardware</strong> section:</p>
 <ul>
-<li>Select the hardware required for fine-tuning your model.</li>
+<li>
+<p>Select the hardware required for fine-tuning your model.</p>
+<p><a class="glightbox" href="../images/hardware-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/hardware-section.png" alt="Hardware Section" title="Hardware Section" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
 </ul>
 </li>
 <li>
 <p>In the <strong>Weights &amp; Biases</strong> section:</p>
 <ul>
-<li>Select your <strong>WandB connection</strong> from the drop-down list. If you don't have an WandB connection, you can click the <strong>+ New connection</strong> that is available in the drop-down list. For more information about how to create the WandB account, see <a href="../../../integrations/how-to-integrate-with-wandb/">How-to-Integrate-with-WandB</a>.</li>
-</ul>
+<li>
+<p>Select your <strong>WandB connection</strong> from the drop-down list. If you don't have a WandB connection, you can click the <strong>+ New connection</strong> that is available in the drop-down list. For more information about how to create the WandB account, see <a href="../../../integrations/how-to-integrate-with-wandb/">How-to-Integrate-with-WandB</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You need an account with Weights and Biases. Enabling the integration with the help of an API token will share your real-time fine-tuning status with the platform and you can comprehensively monitor the fine-tuning metrics of your model. You can use the API token they provided to create an integration and then all the data related to the fine-tuning process will be sent to the account related to that API token.</p>
 </div>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
-<ul>
-<li>Click <strong>Next</strong> to proceed to the next step.</li>
+<p><a class="glightbox" href="../images/wandb-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/wandb-section.png" alt="WandB Section" title="WandB Section" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Next</strong> to proceed to the next step.</p>
+</li>
 </ul>
 </li>
 <li>
@@ -2951,11 +2957,11 @@
 <p class="admonition-title">Note</p>
 <p>If you want to make any modifications, you can go to the previous step by clicking the <strong>Back</strong> button or a particular step indicator on the left panel.</p>
 </div>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/review-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/review-section.png" alt="Review Section" title="Review Section" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Click <strong>Start fine-tuning</strong>. The <strong>Overview</strong> page of your fine-tuned model is displayed with the status “Initializing”.</p>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/initializing-status.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/initializing-status.png" alt="Initializing Status" title="Initializing Status" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The different statuses that are involved in the process include:</p>
 <ul>
 <li>
@@ -2998,7 +3004,7 @@
 <p class="admonition-title">Note</p>
 <p>If you want to perform the testing again, you can click the Retry option corresponding to the Test info section on the Overview page and select a new test data set file or use the existing file and confirm to start the testing again. The status then is displayed as “Testing in Progress”.</p>
 </div>
-<p><a class="glightbox" href="../images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/overview-page.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/overview-page.png" alt="Overview Page" title="Overview Page" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>After the model is fine-tuned, you can deploy the fine-tuned model and use it across GALE and also externally via the API endpoint that is generated after deploying the model.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
