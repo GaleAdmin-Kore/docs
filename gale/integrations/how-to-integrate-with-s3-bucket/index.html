@@ -18,7 +18,7 @@
     
     
       
-        <title>How to Integrate with Weights and Biases - Kore ai Docs</title>
+        <title>How to Integrate with S3 Bucket - Kore ai Docs</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-integrate-with-weights-and-biases" class="md-skip">
+        <a href="#how-to-integrate-with-s3-bucket" class="md-skip">
           Skip to content
         </a>
       
@@ -231,7 +231,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to Integrate with Weights and Biases
+              How to Integrate with S3 Bucket
             
           </span>
         </div>
@@ -2787,9 +2787,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#testing-your-connection-to-weights-biases" class="md-nav__link">
+  <a href="#testing-your-connection-to-s3" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing your connection to Weights &amp; Biases
+      Testing your connection to S3
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-files-from-the-connected-s3-buckets-in-the-agent-flow-builder" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to use files from the connected S3 Buckets in the Agent Flow Builder
     </span>
   </a>
   
@@ -2813,38 +2822,39 @@
   
 
 
-<h1 id="how-to-integrate-with-weights-and-biases"><strong>How to Integrate with Weights and Biases</strong><a class="headerlink" href="#how-to-integrate-with-weights-and-biases" title="Permanent link">&para;</a></h1>
-<p>Connecting with Weights and Biases (WandB) allows users to link to the platform, ensuring that the fine-tuning data associated with the model being refined in GALE is seamlessly transmitted to the WandB console for additional analytics.</p>
-<p><strong>To integrate with your Weights and Biases (WandB) account, follow these steps</strong>:</p>
+<h1 id="how-to-integrate-with-s3-bucket">How to Integrate with S3 Bucket<a class="headerlink" href="#how-to-integrate-with-s3-bucket" title="Permanent link">&para;</a></h1>
+<p>The S3 Storage Integration functionality broadens GALE's capabilities by enabling connectivity with your AWS S3 account. It empowers you to import files from S3 and leverage them in developing high-quality AI applications for enterprises.</p>
+<p><strong>To integrate with your S3 account, follow these steps</strong>:</p>
 <ol>
 <li>
 <p>Click the <strong>Settings</strong> icon on the top navigation bar of the application. The <strong>Integrations</strong> page is displayed.</p>
 <p><a class="glightbox" href="../images/navigate-to-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-settings.png" alt="Navigate to Settings" title="Navigate to Settings" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click the <strong>Weights &amp; Biases</strong> option from the list of Integrations. The Weights &amp; Biases section is expanded.</p>
-<p><a class="glightbox" href="../images/add-w&b-connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-w&b-connection.png" alt="Add W&B Connection" title="Add W&B Connection" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click the <strong>AWS S3 bucket</strong> option from the list of Integrations. The AWS S3 bucket section is expanded.</p>
+<p><a class="glightbox" href="../images/add-s3-connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-s3-connection.png" alt="Add S3 Connection" title="Add S3 Connection" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Add connection</strong>. The <strong>Weights &amp; Biases</strong> dialog is displayed.</p>
-<p><a class="glightbox" href="../images/wandb-connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/wandb-connection.png" alt="WandB Connection" title="WandB Connection" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click <strong>Add connection</strong>. The <strong>AWS S3 bucket</strong> dialog is displayed.</p>
+<p><a class="glightbox" href="../images/aws-s3-bucket-connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/aws-s3-bucket-connection.png" alt="AWS S3 Bucket Connection" title="AWS S3 Bucket Connection" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Enter the following details in the dialog to create a connection:</p>
 <ul>
 <li>Provide a <strong>Connection name</strong>.</li>
-<li>Enter an <strong>API key</strong> which is a unique identifier associated with your WandB account.</li>
+<li>Enter an <strong>Access key</strong> which is a unique identifier associated with your AWS account.</li>
+<li>Enter a <strong>Secret key</strong> which is a confidential key paired with the Access Key ID.</li>
+<li>Enter a <strong>Bucket name</strong> which is configured in the S3 console.</li>
 </ul>
 </li>
 <li>Click <strong>Confirm</strong> to create a connection.</li>
 </ol>
-<h2 id="testing-your-connection-to-weights-biases"><strong>Testing your connection to Weights &amp; Biases</strong><a class="headerlink" href="#testing-your-connection-to-weights-biases" title="Permanent link">&para;</a></h2>
+<h2 id="testing-your-connection-to-s3">Testing your connection to S3<a class="headerlink" href="#testing-your-connection-to-s3" title="Permanent link">&para;</a></h2>
 <p>You can test your connection after you provide the details to verify the accuracy of the details.</p>
 <p><strong>To test your connection, follow these steps</strong>:</p>
 <ol>
 <li>
-<p>Click the <strong>Test</strong> button on the <strong>Weights &amp; Biases</strong> dialog.</p>
-<p><a class="glightbox" href="../images/test-wandb-connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-wandb-connection.png" alt="Test WandB Connection" title="Test WandB Connection" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click the Test button on the <strong>AWS S3 bucket</strong> dialog.</p>
 <p>Once the connection is tested, you will receive feedback information.</p>
 </li>
 <li>
@@ -2852,22 +2862,25 @@
 </li>
 <li>If the connection fails, you can verify the details entered or cancel the set-up process.</li>
 <li>
-<p>You can test the connection by clicking the <strong>Play</strong> button on the connections list.</p>
-<p><a class="glightbox" href="../images/play-button-wandb.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/play-button-wandb.png" alt="Play Button WandB" title="Play Button WandB" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>From the connections table, you can test the connection by clicking the <strong>Play</strong> button.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If the connection fails a red icon is displayed corresponding to the name of the connection on the Connections list.</p>
 </div>
 </li>
+</ol>
+<h2 id="how-to-use-files-from-the-connected-s3-buckets-in-the-agent-flow-builder"><strong>How to use files from the connected S3 Buckets in the Agent Flow Builder</strong><a class="headerlink" href="#how-to-use-files-from-the-connected-s3-buckets-in-the-agent-flow-builder" title="Permanent link">&para;</a></h2>
+<p>Once a connection is created and the integration of S3 Bucket is successful you can use the files in the Flow builder canvas.</p>
+<p><strong>To use the files in the agents flow builder, follow these steps</strong>:</p>
+<ol>
 <li>
-<p>Hover over the connection name and click the three dots icon corresponding to the <strong>Connection name</strong>. The list of options is displayed. Click <strong>Edit</strong> to modify the connection details and <strong>Delete</strong> to delete the connection.</p>
-<p><a class="glightbox" href="../images/manage-wandb-connection.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-wandb-connection.png" alt="Manage WandB Connection" title="Manage WandB Connection" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Create an <strong>Input variable</strong> with type <strong>Remote File</strong>. </p>
+</li>
+<li>
+<p>Add an API node and point to the remote file in the API node using the URL field. </p>
+<p>The file content will be available in the context object. You can access the file content in any other nodes using the context object.</p>
 </li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Once the WandB connection is completed, you can see your connection name in the drop-down box in the <strong>Create a fine-tuned model</strong> wizard in the <strong>Weights and Biases</strong> section.  For more information about the fine-tuning wizard, see <a href="../../models/fine-tune-models/create-a-fine-tuned-model/">Create a Fine-Tuned Model</a>.</p>
-</div>
 
 
 
