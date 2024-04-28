@@ -2969,7 +2969,7 @@
 <p>Enter a <strong>Custom Name</strong> by which you will identify the node later.</p>
 </li>
 <li>
-<p>Click the <strong>Define a Script</strong> box, and the <strong>Edit script</strong> dialog is displayed.</p>
+<p>Click the <strong>Define a Script</strong> box, and the <strong>Edit script</strong> dialog is displayed. Script node is used to process/parse the given input or the output of the previous node in a python or JavaScript.</p>
 <p><a class="glightbox" href="../images/edit-script-box.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/edit-script-box.png" alt="Edit Script Box" title="Edit Script Box" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
@@ -2978,13 +2978,24 @@
 </li>
 <li>
 <p>Enter a <strong>script</strong> in the script box. Context variables are available for you to use while writing the script.</p>
+<p>For example:</p>
+<p>context.js_fact20 = 1</p>
+<p>for(var i=1;i&lt;21;i++)</p>
+<p>{</p>
+<p>context.js_fact20 = context.js_fact20*i    #context[“js_fact20”] in python</p>
+<p>}</p>
 <p><a class="glightbox" href="../images/enter-a-script.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/enter-a-script.png" alt="Enter a Script" title="Enter a Script" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Click the <strong>Copy</strong> icon if you want to copy the code.</p>
 </li>
 <li>
-<p>Click the <strong>Run</strong> button to test the script. Once the script is resolved successfully, you will be able to see the results in the <strong>Log</strong> section of the <strong>Edit Script</strong> page. You can provide the input for the script node to execute in the <strong>Context input</strong> section and the output of the script execution along with the variable generated is displayed in the <strong>Context output</strong> section. You can debug the issues based on the log report and re-run the script.</p>
+<p>Click the <strong>Run</strong> button to test the script. Once the script is resolved successfully, you will be able to see the results in the <strong>Log</strong> section of the <strong>Edit Script</strong> page. </p>
+<ul>
+<li><strong>Context input</strong>: You can provide some input for the script node to execute in the Context input section.</li>
+<li><strong>Context output</strong>: To find the results of the function from the given input. The output of the script execution along with the variable generated is displayed in the Context output section. You can debug the issues based on the log report and re-run the script.</li>
+<li><strong>Log</strong>: Status of the function can be monitored and you can view the values.</li>
+</ul>
 <p><a class="glightbox" href="../images/context-input-context-output.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/context-input-context-output.png" alt="Context Input Context Output" title="Context Input Context Output" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
