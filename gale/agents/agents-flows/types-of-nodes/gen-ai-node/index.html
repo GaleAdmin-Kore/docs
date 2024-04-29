@@ -1098,6 +1098,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2605,6 +2614,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2645,7 +2663,7 @@
 <ul>
 <li>Click <strong>Gen</strong> <strong>AI</strong> from the bottom bar of the Agents page.</li>
 </ul>
-<p><a class="glightbox" href="../images/go-to-flow-canvas.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/go-to-flow-canvas.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../types-of-nodes/gen-ai-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../types-of-nodes/gen-ai-node.png" alt="Add a New Gen AI Node" title="Add a New Gen AI Node" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The Gen AI node is created on the canvas and you can now define the node's properties by clicking on the node. You can drag and move a node to any location on the canvas.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2666,7 +2684,7 @@
 <li>
 <p>Enter a <strong>Custom Name</strong> for the node.</p>
 </li>
-<li>Select a model from the list. You can see the AI models that you have already configured in the Models section of GALE. For more information about configuring a model, see <a href="../../../../models/overview.md">Model Studio</a>.</li>
+<li>Select a model from the list. You can see the AI models that you have already configured in the Models section of GALE. For more information about configuring a model, see <a href="../../../../models/overview/">Model Studio</a>.</li>
 <li>
 <p>Enter a <strong>System prompt</strong> and the <strong>Prompt</strong> you want to test with your selected model. The System Prompt is the custom prompt based on your use case for an LLM to generate text or translate and so on. The Prompt allows you to pass the variables to the system prompt.</p>
 <p><strong>System prompt example</strong>: Create a prompt which asks the user their name and age which can create a workout routine.</p>
@@ -2701,17 +2719,15 @@
 </li>
 <li>
 <p>Click the <strong>Actions</strong> icon and select the actions that you want the node to trigger when the Gen AI node is successful or when it fails.</p>
-<ul>
-<li>
-<p><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</p>
-</li>
-<li>
-<p><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Gen AI node.</p>
-</li>
-</ul>
-<p><a class="glightbox" href="../images/gen-ai-actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/gen-ai-actions.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-actions.png" alt="Gen AI Actions" title="Gen AI Actions" style="border: 1px solid gray; zoom:50%;"></a></p>
 </li>
 </ol>
+<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
+<p><strong>Connection</strong>:</p>
+<ul>
+<li><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</li>
+<li><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Gen AI node.</li>
+</ul>
 
 
 
