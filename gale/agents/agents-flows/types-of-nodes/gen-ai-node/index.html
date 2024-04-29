@@ -2711,7 +2711,8 @@
 <li>
 <p><strong>Top P</strong>: This parameter, also known as nucleus sampling, controls the diversity of the model's output. It sets a threshold where the model will only consider the top tokens whose cumulative probability exceeds the threshold. A high top P (for example, 0.9) will make the model's output more diverse, while a low top P (for example, 0.1) will make the output more deterministic.</p>
 <p>You can access the output of GenAI with the syntax: </p>
-<p>{{context.steps.YOURGENAINODENAME.output}}. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.steps.YOURGENAINODENAME.output}}. 
+</span></code></pre></div>
 <p>Also, GALE has been integrated in such a way that it can auto recognize variables / outputs. </p>
 <p>Type "context.steps." and it displays the possible context variables / nodes and then their outputs, and so on.</p>
 </li>
