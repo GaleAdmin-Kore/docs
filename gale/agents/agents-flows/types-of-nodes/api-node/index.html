@@ -1068,6 +1068,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-the-api-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the API Node
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2587,6 +2605,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#configure-the-api-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure the API Node
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2636,7 +2672,7 @@
 <p class="admonition-title">Note</p>
 <p>The start node is displayed by default on the flow builder.</p>
 </div>
-<h1 id="configure-the-api-node">Configure the API Node<a class="headerlink" href="#configure-the-api-node" title="Permanent link">&para;</a></h1>
+<h2 id="configure-the-api-node">Configure the API Node<a class="headerlink" href="#configure-the-api-node" title="Permanent link">&para;</a></h2>
 <p><strong>To configure the API node, follow these steps</strong>:</p>
 <ol>
 <li>Add an API node to the canvas.</li>
@@ -2660,7 +2696,7 @@
 </li>
 <li>
 <p>Configure the API request under <strong>Request Definition</strong>. Define the GET, PUT, POST, or DELETE service request, along with the API call and parameters to pass. To create a new request, click <strong>+ Define Request</strong>.</p>
-<p><a class="glightbox" href="../images/define-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/define-request.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/define-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/define-request.png" alt="Define Request" title="Define Request" style="border: 1px solid gray; zoom:60%;"></a></p>
 <p>The <strong>Edit Request</strong> window is displayed.</p>
 <p><a class="glightbox" href="../images/edit-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/edit-request.png" alt="Edit Request" title="Edit Request" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
@@ -2721,11 +2757,23 @@ Value: application/json</p>
 <p>Click the <strong>Actions</strong> icon and select the actions that you want the node to trigger when the API call is successful or when it fails.</p>
 <p><a class="glightbox" href="../images/actions-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/actions-icon.png" alt="Actions Icon" title="Actions Icon" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
-<li>
-<p>Select the <strong>Go to Node</strong> under the <strong>On Success</strong> section of the API node configuration dialog. Based on the node you selected a respective new node is added to the canvas.</p>
-</li>
-<li>Select the <strong>Go to Node</strong> under the <strong>On Failure</strong> section of the API node configuration dialog. Based on the node you selected a respective new node is added to the canvas.</li>
 </ol>
+<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
+<p><strong>Errors</strong></p>
+<ul>
+<li>400 Bad Request: The server cannot process the request due to a client error (e.g., malformed request syntax, invalid parameters).</li>
+<li>401 Unauthorized: The client must authenticate itself to get the requested response.</li>
+<li>403 Forbidden: The client does not have permission to access the requested resource.</li>
+<li>404 Not Found: The server cannot find the requested resource. </li>
+<li>500 Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request.</li>
+<li>504 Gateway Timeout: The server, acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request. </li>
+<li>Status code 200:  It means that the request made was successful.</li>
+</ul>
+<p><strong>Connection</strong>:</p>
+<ul>
+<li><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</li>
+<li><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the API node.</li>
+</ul>
 
 
 

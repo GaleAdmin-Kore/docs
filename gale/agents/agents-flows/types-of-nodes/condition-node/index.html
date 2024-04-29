@@ -1065,6 +1065,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2623,6 +2632,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2710,14 +2728,15 @@
 <p>In the <strong>IF section</strong> select the following:</p>
 <ul>
 <li>
-<p>Select the <strong>Context</strong> object you want to use. For example, {{context.steps.Start0001.xxxxxx}}.</p>
+<p>Select the <strong>Context</strong> object you want to use. 
+For example, {{context.steps.Start0001.xxxxxx}}.</p>
 </li>
 <li>
 <p>Select an <strong>Operator</strong> from the drop-down list such as, exists, does not exist, equal to, greater than or equal to, less than or equal to, not equal to, greater than, less than, does not contain, and contains.</p>
 </li>
 <li>
 <p>Enter a value in the <strong>Value</strong> field.</p>
-<p><a class="glightbox" href="../images/if-condition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/if-condition.png" alt="If Condition" title="If Condition" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/if-condition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/if-condition.png" alt="If Condition" title="If Condition" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 <li>
 <p>In the <strong>Then go to</strong> dropdown, choose the node to connect to if the condition is met.</p>
@@ -2732,7 +2751,7 @@
 <p><strong>OR</strong> – When using OR it means that you want the condition to meet either one or another of the set criteria.</p>
 </li>
 </ul>
-<p><a class="glightbox" href="../images/and-or-logic-in -if-condition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/and-or-logic-in -if-condition.png" alt="And or Logic in If Condition" title="And or Logic in If Condition" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/and-or-logic-in -if-condition.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/and-or-logic-in -if-condition.png" alt="And or Logic in If Condition" title="And or Logic in If Condition" style="border: 1px solid gray; zoom:60%;"></a></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can add multiple AND/OR criteria by clicking +AND or +OR. If you start with AND condition then you can only add AND similarly if you add OR condition, then you can add only OR. You cannot add both in the same node. You can delete an existing AND/OR criterion by clicking the “-” sign on its left.</p>
@@ -2742,9 +2761,19 @@
 </li>
 <li>
 <p>In the <strong>Else section</strong>, select the node you want to trigger if the If condition fails.</p>
-<p><a class="glightbox" href="../images/else-select-node-in-condition-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/else-select-node-in-condition-node.png" alt="Else Select Node in Condition Node" title="Else Select Node in Condition Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/else-select-node-in-condition-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/else-select-node-in-condition-node.png" alt="Else Select Node in Condition Node" title="Else Select Node in Condition Node" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 </ol>
+<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
+<p><strong>Errors</strong></p>
+<ul>
+<li>If the condition is true or false and does not have a node to go to, then an error will be displayed “Path not defined. Please check the flow.”</li>
+</ul>
+<p><strong>Connection</strong>:</p>
+<ul>
+<li><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</li>
+<li><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Condition node.</li>
+</ul>
 
 
 

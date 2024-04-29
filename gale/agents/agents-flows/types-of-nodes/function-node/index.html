@@ -1119,6 +1119,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2605,6 +2614,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#status-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status Codes
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2698,13 +2716,19 @@
 </li>
 <li>
 <p>Click the <strong>Actions</strong> icon and select the actions that you want the node to trigger when the Functions node is successful or when it fails.</p>
-<p><a class="glightbox" href="../images/add-a-new-function-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/actions-for-function-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/actions-for-function-node.png" alt="Actions for Function Node" title="Actions for Function Node" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
-<li>
-<p>Select the <strong>Go to Node</strong> under the <strong>On Success</strong> section of the Function node configuration dialog. Based on the node you selected a respective new node is added to the canvas.</p>
-</li>
-<li>Select the <strong>Go to Node</strong> under the <strong>On Failure</strong> section of the Function node configuration dialog. Based on the node you selected a respective new node is added to the canvas.</li>
 </ol>
+<h2 id="status-codes">Status Codes<a class="headerlink" href="#status-codes" title="Permanent link">&para;</a></h2>
+<p><strong>Errors</strong>:</p>
+<ul>
+<li>Compilation and runtime errors.</li>
+</ul>
+<p><strong>Connection</strong>:</p>
+<ul>
+<li><strong>On Success</strong>: On successful execution of the current node this connection can be linked with another node such as Gen AI node, Function node, Condition node, API node, or an End node.</li>
+<li><strong>On Failure</strong>: On failure in execution of the current node this connection should be linked with an End node to display the custom error message from the Function node. </li>
+</ul>
 
 
 
