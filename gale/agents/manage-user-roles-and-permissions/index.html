@@ -2544,7 +2544,7 @@
 
 
 <h1 id="manage-user-roles-and-permissions">Manage User Roles and Permissions<a class="headerlink" href="#manage-user-roles-and-permissions" title="Permanent link">&para;</a></h1>
-<p>The owner of each respective application holds the authority to extend invitations to any number of individual users, customizing their capabilities in alignment with the unique requirements of each application.</p>
+<p>Account owners can invite users to collaborate on specific Agents. Invited users can access the Models and Data modules for the invited account but can only see the Agents they are invited to. Also, the Playground experiments are visible only to the user who created them.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can only invite those users to an application, who have access to your account.</p>
@@ -2719,5 +2719,7 @@
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
       
     
-  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
