@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#manage-agents-flow-nodes" class="md-skip">
+        <a href="#manage-nodes-in-agent-flow" class="md-skip">
           Skip to content
         </a>
       
@@ -991,9 +991,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#delete-a-node-connections" class="md-nav__link">
+  <a href="#delete-a-nodes-connection" class="md-nav__link">
     <span class="md-ellipsis">
-      Delete a node connections
+      Delete a node’s connection
     </span>
   </a>
   
@@ -2862,9 +2862,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#delete-a-node-connections" class="md-nav__link">
+  <a href="#delete-a-nodes-connection" class="md-nav__link">
     <span class="md-ellipsis">
-      Delete a node connections
+      Delete a node’s connection
     </span>
   </a>
   
@@ -2897,75 +2897,40 @@
   
 
 
-<h1 id="manage-agents-flow-nodes">Manage Agent's Flow Nodes<a class="headerlink" href="#manage-agents-flow-nodes" title="Permanent link">&para;</a></h1>
+<h1 id="manage-nodes-in-agent-flow">Manage Nodes in Agent Flow<a class="headerlink" href="#manage-nodes-in-agent-flow" title="Permanent link">&para;</a></h1>
+<p>A flow consists of a sequence of nodes connected on the flow builder canvas. You can easily add nodes on the canvas, connect them, rename and rearrange them, and delete them as required.</p>
 <h3 id="add-a-new-node">Add a new node<a class="headerlink" href="#add-a-new-node" title="Permanent link">&para;</a></h3>
-<p>The Start node is the starting point of any flow and is available by default. You can drag and drop the Start node (as well as any other nodes) anywhere on the canvas.</p>
-<p><strong>Steps to add a node to the flow builder canvas</strong>:</p>
-<ul>
-<li>
-<p>Do one of the following:</p>
-<ul>
-<li>
-<p>Click the “+” icon and select a node from the pop-up menu.</p>
-<p><a class="glightbox" href="../images/add-a-new-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-node.png" alt="Add a new Node" title="Add a new Node" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
-<li>
-<p>Drag nodes from within the <strong>Assets</strong> panel on the left navigation bar onto the canvas.</p>
-</li>
-</ul>
-</li>
-</ul>
+<p>The Start node is the starting point of any flow and is available by default. You can drag and drop it (as well as any other nodes) anywhere on the canvas.</p>
+<p>Click the “+” icon and select a node from the pop-up menu, or drag a node from the Assets panel onto the canvas.  <a class="glightbox" href="../images/add-a-new-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-a-new-node.png" alt="Add a new Node" title="Add a new Node" style="border: 1px solid gray; zoom:80%;"></a></p>
 <h3 id="rename-a-node">Rename a node<a class="headerlink" href="#rename-a-node" title="Permanent link">&para;</a></h3>
-<p>You can rename and set a desired name of your preference.</p>
-<p><strong>Steps to rename a node</strong>:</p>
+<p>Right-click the node you want to rename and select Rename from the list of options.<br />
+<a class="glightbox" href="../images/rename-a-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/rename-a-node.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<h3 id="rearrange-nodes">Rearrange nodes<a class="headerlink" href="#rearrange-nodes" title="Permanent link">&para;</a></h3>
+<p>To rearrange nodes on your canvas, drag and drop them to the desired location, as shown in the demo below.<br />
+<a class="glightbox" href="../images/rearrange-a-node.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/rearrange-a-node.gif" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <ul>
 <li>
-<p>Right-click on the required node. A pop-up with a list of options is displayed.</p>
-<p><a class="glightbox" href="../images/rename-a-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/rename-a-node.png" alt="Rename a Node" title="Rename a Node" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Only the node that you are dragging will change position. Any connecting nodes will remain in place, regardless of the direction of their connection.</p>
 </li>
 <li>
-<p>Click the <strong>Rename</strong> option from the list of options to modify the name.</p>
+<p>You can right-click anywhere on the canvas and perform some other actions on the canvas such as Changing the background color of the canvas, Show/Hide UI, and Show/Hide Grid by.</p>
 </li>
 </ul>
-<h3 id="rearrange-nodes">Rearrange nodes<a class="headerlink" href="#rearrange-nodes" title="Permanent link">&para;</a></h3>
-<p>To rearrange nodes on your canvas, drag and drop them to the desired location as shown in the following demo:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Only the node that you are dragging will change position. Any connecting nodes will remain in place, regardless of the direction of their connection.</p>
-</div>
-<p><a class="glightbox" href="../images/rearrange-a-node.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/rearrange-a-node.gif" alt="Rearrange a Node" title="Rearrange a Node" style="border: 1px solid gray; zoom:80%;"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can right-click anywhere on the canvas and perform some other actions on the canvas such as Changing the background color of the canvas, Show/Hide UI, and Show/Hide Grid by.</p>
 </div>
 <h3 id="connect-nodes">Connect nodes<a class="headerlink" href="#connect-nodes" title="Permanent link">&para;</a></h3>
-<p>Node connections are either made within the configuration of each node or by dragging and dropping the nodes on the canvas You can also connect nodes from the property panel of the node while defining the settings for success and failure. That will also automatically connect the nodes.</p>
-<p><strong>The steps are the following</strong>:</p>
+<p>Node connections are either made from within each node's configuration or by dragging and dropping the nodes on the canvas. You can also connect nodes from the property panel of the node while defining the settings for success and failure. That will also automatically connect the nodes.</p>
+<p>Steps to connect the nodes:</p>
 <ol>
-<li>Click the grey dot that displays next to the node.</li>
-<li>Drag your cursor over the grey dot displayed on top of the connecting node and release.</li>
-<li>A line is drawn between the nodes, with an arrow indicating the direction of the node connection.</li>
-<li>
-<p>You can change the destination node by clicking the grey dot on top of the initial destination node and then dragging the connection line to the grey dot on top of the new destination node.</p>
-<p><a class="glightbox" href="../images/connect-nodes.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/connect-nodes.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;"></a></p>
-</li>
+<li>Click the grey dot that displays next to the node, drag your cursor over the grey dot displayed on top of the connecting node, and release. A line is drawn between the nodes, with an arrow indicating the direction of the node connection.</li>
+<li>You can change the destination node by clicking the grey dot on top of the initial destination node and then dragging the connection line to the grey dot on top of the new destination node.<br />
+<a class="glightbox" href="../images/connect-nodes.gif" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/connect-nodes.gif" alt="Connect Nodes" title="Connect Nodes" style="border: 1px solid gray; zoom:80%;"></a></li>
 </ol>
-<h3 id="delete-a-node-connections">Delete a node connections<a class="headerlink" href="#delete-a-node-connections" title="Permanent link">&para;</a></h3>
-<p><strong>Steps to delete a node connection</strong>:</p>
-<ol>
-<li>To delete node connections, click the line connecting two nodes and a <strong>Delete</strong> icon is displayed.</li>
-<li>
-<p>Click the <strong>Delete</strong> icon to delete the connection.</p>
-<p>The nodes remain on the canvas but will not be connected anymore. To ensure a working flow, you must create another connection between the nodes.</p>
-</li>
-</ol>
+<h3 id="delete-a-nodes-connection">Delete a node’s connection<a class="headerlink" href="#delete-a-nodes-connection" title="Permanent link">&para;</a></h3>
+<p>Click the line connecting two nodes and click the <strong>Delete</strong> icon to delete the connection. The nodes remain on the canvas but will not be connected anymore. To ensure a working flow, you must create another connection between the nodes.</p>
 <h3 id="delete-a-node">Delete a node<a class="headerlink" href="#delete-a-node" title="Permanent link">&para;</a></h3>
-<p>You can delete a node if you no longer require it.</p>
-<p><strong>Steps to delete a node</strong>:</p>
-<ul>
-<li>Right-click on the required node. A pop-up with a list of options is displayed.</li>
-<li>Click <strong>Delete</strong> from the list of options and the node is deleted.</li>
-</ul>
+<p>Right-click the required node and select <strong>Delete</strong> from the list of options.</p>
 
 
 
