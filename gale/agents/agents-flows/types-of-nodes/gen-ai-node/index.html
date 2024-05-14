@@ -2880,19 +2880,17 @@
 For example, “Go through the conversation and identify the intent of the conversation.”</p>
 </li>
 <li>
-<p><strong>Prompt</strong>: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “transcript” and pass that on to identify the intent. 
-Format: </p>
+<p><strong>Prompt</strong>: It allows you to pass a variable to the system prompt. For example, you can store the conversation transcript in a variable named “transcript” and pass that on to identify the intent.<br />
+Format: 
+    <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.variable_name}}
+</span></code></pre></div></p>
+<p>Example:   <br />
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{context.transcript}}
+</span></code></pre></div></p>
 </li>
-</ul>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.variable_name}}
-</span></code></pre></div>
-<p>Example:</p>
-<p><div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{{context.transcript}}
-</span></code></pre></div>
-<a class="glightbox" href="../images/gen-ai-detect-intent-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-detect-intent-node.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:80%;"></a></p>
-<ul>
 <li>
-<p><strong>Examples</strong>: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output. </p>
+<p><strong>Examples</strong>: Add a few relevant examples to guide the model. Click the arrow to add examples of User input and expected AI output.<br />
+<a class="glightbox" href="../images/gen-ai-detect-intent-node.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/gen-ai-detect-intent-node.png" alt="Configure System Prompt and Prompt" title="Configure System Prompt and Prompt" style="border: 1px solid gray; zoom:80%;"></a> </p>
 </li>
 <li>
 <p><strong>Hyperparameters</strong>: Hyperparameters allow you to fine-tune the AI model's behavior to suit your needs. While the default settings work well for most cases, you can adjust them to find the right balance for your use case.</p>
