@@ -2862,7 +2862,7 @@
 </li>
 <li>
 <p>Click the added node to open its properties dialog box. The General Settings for the node are displayed.<br />
-<a class="glightbox" href="./images/api-node-general-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
+<a class="glightbox" href="../images/api-node-general-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-general-settings.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Enter or select the following information:</p>
@@ -2870,7 +2870,7 @@
 <li><strong>Custom Name</strong>: Enter an appropriate name for the node.</li>
 <li><strong>Type</strong>: Select the API type from the drop-down list - REST or SOAP.</li>
 <li><strong>Request Definition</strong>: Define the details of the service request to make the call and fetch the data. Click <strong>Define Request</strong> and enter or select the following details in the Edit Request dialog box:<br />
-<a class="glightbox" href="./images/api-node-edit-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a><ol>
+<a class="glightbox" href="../images/api-node-edit-request.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-edit-request.png" alt="Go to Flow Canvas" title="Go to Flow Canvas" style="border: 1px solid gray; zoom:80%;"></a><ol>
 <li>Select the request type from the list - GET, PUT, POST, PATCH, or DELETE.</li>
 <li>Paste your API Endpoint URL or cURL in the text field.</li>
 <li>In the <strong>Headers</strong> tab, specify the details of the Key and Value pair. For example, 
@@ -2890,8 +2890,8 @@ Value: application/json</li>
 </ul>
 </li>
 <li>
-<p>Click the Connections icon and select the Go to Node for both success and failure conditions.<br />
-<a class="glightbox" href="./images/api-node-connections.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click the <strong>Connections</strong> icon in the left navigation and select the <strong>Go to Node</strong> for both success and failure conditions.<br />
+<a class="glightbox" href="../images/api-node-connections.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/api-node-connections.png" alt="API node Connections Properties" title="API node Connections Properties" style="border: 1px solid gray; zoom:80%;"></a></p>
 <ol>
 <li>
 <p><strong>On Success</strong> &gt; <strong>Go to Node</strong>: After the current node is successfully executed, go to a selected node in the flow to execute next. For example, you can process the data from this node into a Function node and then use it further. In this case, select the Function node. </p>
@@ -2907,8 +2907,8 @@ Value: application/json</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The API node can be accessed using 
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.steps.Start.APINODENAME}}
+<p>To access an API node using the context variable, use the following format: 
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>{{context.steps.Start.APINodeName}}
 </span></code></pre></div></p>
 </div>
 <h2 id="api-status-codes">API Status Codes<a class="headerlink" href="#api-status-codes" title="Permanent link">&para;</a></h2>
