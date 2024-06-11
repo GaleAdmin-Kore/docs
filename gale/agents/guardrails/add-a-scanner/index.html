@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#add-a-scanner" class="md-skip">
+        <a href="#add-inputoutput-scanners" class="md-skip">
           Skip to content
         </a>
       
@@ -2766,39 +2766,36 @@
   
 
 
-<h1 id="add-a-scanner">Add a Scanner<a class="headerlink" href="#add-a-scanner" title="Permanent link">&para;</a></h1>
-<p>You have the option to add an input or output scanner, facilitating the scanning and verification of a particular objective. Input scanners evaluate the inputs or prompts directed to the LLM node, while output scanners assess the responses received from the LLM.</p>
+<h1 id="add-inputoutput-scanners">Add Input/Output Scanners<a class="headerlink" href="#add-inputoutput-scanners" title="Permanent link">&para;</a></h1>
+<p>You can add input or output scanners to evaluate prompts or responses in your application. Input scanners assess inputs or prompts sent to the LLM node, while output scanners evaluate the responses received from the LLM.</p>
+<p>In the following steps, you will learn how to add an input scanner. The steps to add an output scanner are similar to those for an input scanner. You need to add input and output scanners separately based on your requirements.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In the following procedure, you will learn how to add an input scanner. However, the steps are similar if you want to add an output scanner. You need to add an input scanner and output scanner separately based on your requirements.</p>
+<p>Scanners must be deployed before you add or use them. <a href="../manage-guardrails/">Learn more</a>.</p>
 </div>
-<p><strong>To add a scanner, follow these steps</strong>:</p>
+<p>Steps to add a Scanner:</p>
 <ol>
-<li>Click <strong>Apps</strong> on the top navigation bar of the application.</li>
-<li>Select the required application to which you want to add the guardrail scanners. The <strong>Application</strong> is displayed.</li>
 <li>
-<p>Click the <strong>Guardrails</strong> tab from the left navigation pane. The <strong>Guardrails</strong> page is displayed.</p>
-<p><a class="glightbox" href="../images/navigate-to-guardrails.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click <strong>Agents</strong> on the top navigation bar and select the desired agent.</p>
 </li>
 <li>
-<p>Click <strong>Add scanner</strong> from the <strong>Input Scanners</strong> section. A pop-up with a list of options is displayed.</p>
-<p><a class="glightbox" href="../images/add-input-scanner.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-input-scanner.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click <strong>Guardrails</strong> in the left navigation pane. The Guardrails page is displayed.<br />
+<a class="glightbox" href="../images/navigate-to-guardrails.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/navigate-to-guardrails.png" alt="Navigate to Guardrails" title="Navigate to Guardrails" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Select the required scanners and click <strong>Done</strong>. The selected scanner is added to the list.</p>
-<p><a class="glightbox" href="../images/scanner-added.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/scanner-added.png" alt="Scanner Added" title="Scanner Added" style="border: 1px solid gray; zoom:80%;"></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You must deploy the required scanner first and only then it will be listed in this pop-up list.</p>
-</div>
+<p>In the Input Scanners section, click <strong>Add Scanner</strong>, select the required scanners from the pop-up list, and then click <strong>Done</strong>. 
+<a class="glightbox" href="../images/add-scanners.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-scanners.png" alt="Add Input Scanner" title="Add Input Scanner" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>The selected scanners are added to the list.<br />
+<a class="glightbox" href="../images/added-guardrails.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/added-guardrails.png" alt="Scanner Added" title="Scanner Added" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click the required scanner from the list of added scanners to configure that scanner. The settings displayed are different for each scanner. For example, the settings for “Toxicity” are <strong>Threshold</strong> and <strong>End the flow if the risk score is above</strong>. Similarly, the settings for the “Regex” scanner are <strong>Enter patterns to ban</strong>, <strong>End the flow if the risk score is above</strong>, and <strong>Match type</strong>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can remove a scanner if you don’t want to be charged if not in use, by clicking the <strong>Remove</strong> icon corresponding to the scanner name from the list of scanners as shown in the following image.</p>
-</div>
-<p><a class="glightbox" href="../images/remove-scanner.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/remove-scanner.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Click an added scanner to configure its settings, which vary depending on the scanner type.
+For example, <strong>Toxicity</strong> has "Threshold" and "End the flow if the risk score is above" settings, while <strong>Regex</strong> has "Enter patterns to ban", "End the flow if the risk score is above", and "Match type" settings.<br />
+<a class="glightbox" href="../images/toxicity-scanner-settings.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/toxicity-scanner-settings.png" alt="Configure Scanner's Settings" title="Configure Scanner's Settings" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>(Optional) To add more scanners, click the plus or <strong>Add Scanner</strong> icon. To remove an unused scanner, click the minus or <strong>Remove Scanner</strong> icon.<br />
+<a class="glightbox" href="../images/add-remove-scanners.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-remove-scanners.png" alt="Remove Scanner" title="Remove Scanner" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 </ol>
 
