@@ -2783,18 +2783,29 @@
 <a class="glightbox" href="../images/guardrails-test-results.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/guardrails-test-results.png" alt="Guardrails Test Results" title="Guardrails Test Results" style="border: 1px solid gray; zoom:80%;"></a> </p>
 <ul>
 <li>
-<p><strong>Validity</strong>: Indicates whether the prompt is valid.</p>
+<p><strong>Validity</strong>: Indicates whether the prompt is valid based on the scanner's criteria. (For example, if Toxicity is not found in the prompt, the prompt is valid, and the Validity is set to True.)</p>
 </li>
 <li>
-<p><strong>Risk Score</strong>:  Indicates the risk score of the prompt based on the value configured in the "End the flow if the risk score is above" field in the scanner settings.</p>
+<p><strong>Risk Score</strong>: Indicates the prompt's risk level, calculated using the scanner's threshold and score.</p>
 </li>
 <li>
-<p><strong>Duration</strong>: Displays the time taken by the Scanner to execute the prompt.</p>
+<p><strong>Duration</strong>: Displays the time taken by the scanner to process the prompt.</p>
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>
+<p>The Risk Score is calculated by the formula: (Threshold - Scanner Score) / Threshold. </p>
 </li>
 <li>
-<p>Based on the results, you can adjust the Scanner's settings and test them again if necessary</p>
+<p>For the Relevance Scanner, if the similarity between the prompt and generated answer is below the user-defined threshold, the Risk Score is 1; otherwise, it's 0.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Based on the results, you can adjust the Scanner's settings and test them again if required.</p>
 </li>
 </ol>
 
