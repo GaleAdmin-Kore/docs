@@ -2886,14 +2886,21 @@
   <h1>Overview</h1>
 
 <p>The model overview page displays real-time progress of the Fine-tuned models. </p>
-<p>To access the model’s overview page,  go to  <strong>Models</strong> &gt; <strong>Fine-tuned models</strong> and click any model.</p>
-<p>The overview page displays the following information:</p>
+<p>To access the model’s overview page,  go to  <strong>Models</strong> &gt; <strong>Fine-tuned models</strong> and click <strong>Model</strong>.</p>
 <ul>
-<li><strong>General Information</strong>: <a href="https://galeadmin-kore.github.io/docs/gale/models/fine-tune-models/images/initializing-status.png">This displays the model's progress status, Total time, and Author details. It also allows you to stop the fine-tuning process.</a><ul>
-<li>The progress statuses include Initializing, Training in progress, Testing in progress, Fine-tuning completed, Stopped, and Failed. \
-<strong>Note</strong>: If fine-tuning fails, the status changes to "Failed." View the reason, make necessary changes, and click the Re-trigger to restart fine-tuning.</li>
-<li>If necessary, you can stop the process in the middle and resume it later; then, the status is changed to “Stopped.” Click Re-trigger to initiate the fine-tuning process again from the beginning.</li>
-</ul>
+<li>
+<p><strong>General Information</strong>: This section displays the model's <strong>progress status</strong>, <strong>Total time</strong>, and <strong>Author details</strong>.  </p>
+<ul>
+<li>
+<p>The progress statuses include Initializing, Training in progress, Testing in progress, Fine-tuning completed, Stopped, and Failed.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<div class="language-text highlight"><pre><span></span><code>If fine-tuning fails, the status changes to &quot;Failed.&quot; View the reason, make necessary changes, and click the Re-trigger to restart fine-tuning.
+</code></pre></div>
+</div>
+</li>
+<li>
+<p>If necessary, you can stop the process in the middle and resume it later; then, the status is changed to “Stopped.” Click Re-trigger to initiate the fine-tuning process again from the beginning.</p>
 </li>
 <li><strong>Base model information</strong>: This section shows the base model used for fine-tuning and its source.</li>
 <li><strong>Training information</strong>: This shows important details like training type, number of training steps, training loss, percentage of validation data, validation loss, training start time, and duration. Click the downward arrows next to the training loss and validation loss fields to see their graphical trends.</li>
@@ -2901,6 +2908,9 @@
 <li><strong>Hardware information</strong>: This displays CPU and GPU utilization during fine-tuning.</li>
 <li><strong>Training parameters</strong>: Displays the summary of the parameters provided.</li>
 </ul>
+</li>
+</ul>
+<p><a class="glightbox" href="./images/model-overview.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/model-overview.png" alt="Model Overview" title="Model Overview" style="border: 1px solid gray; zoom:60%;"></a></p>
 
 
 
