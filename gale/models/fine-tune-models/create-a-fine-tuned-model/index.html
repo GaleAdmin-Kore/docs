@@ -2858,6 +2858,110 @@
 
 
 <h1 id="create-a-fine-tuned-model">Create a Fine-Tuned Model<a class="headerlink" href="#create-a-fine-tuned-model" title="Permanent link">&para;</a></h1>
+<p>You can fine-tune a Kore-hosted model or import one from Hugging Face. The fine-tuning process involves the following steps:</p>
+<ol>
+<li>General details</li>
+<li>Selecting a base model</li>
+<li>Fine-tuning configuration</li>
+<li>Adding the training and evaluation datasets</li>
+<li>Adding the test dataset (optional)</li>
+<li>Selecting a hardware</li>
+<li>Integrating with Weights &amp; Biases (optional)</li>
+</ol>
+<p>To fine-tune a model, follow these steps:</p>
+<ol>
+<li>
+<p>Go to <strong>Models</strong> &gt; <strong>Fine-tuned models</strong> and click <strong>Start fine-tuning</strong>.<a class="glightbox" href="../images/start-fine-tuning.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/start-fine-tuning.png" alt="Start Fine-Tune Model" title="Start Fine-Tune Model" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>The <strong>Create a fine-tuned model</strong> dialog is displayed. In the <strong>General details</strong> section:</p>
+<ul>
+<li>
+<p>Enter a <strong>Model name</strong> and <strong>Description</strong> for the fine-tuned model.
+<a class="glightbox" href="../images/general-details-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/general-details-section.png" alt="General Details Section" title="General Details Section" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Provide tags to ease the search for the model and click <strong>Next</strong>.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Base</strong> <strong>model</strong> section, choose the model to be fine-tuned.</p>
+<ul>
+<li>
+<p>If you choose <strong>Kore-hosted models</strong>, select the <strong>model</strong> from the dropdown menu and click <strong>Next</strong>.
+  <a class="glightbox" href="../images/base-model-kore hosted.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/base-model-kore hosted.png" alt="Kore hosted models" title="Kore hosted models" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>If you choose to <strong>Import from Hugging Face</strong>, select the <strong>Hugging Face connection</strong> type from the dropdown, and paste the <strong>model name</strong>. Click <strong>Next</strong>. For more information about how to connect to your Hugging Face account, see<a href="https://galeadmin-kore.github.io/docs/gale/integrations/how-to-enable-hugging-face/"> How to Connect to your Hugging Face Account</a>.
+<a class="glightbox" href="../images/import-hugging-face.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-hugging-face.png" alt="Import from Hugging Face" title="Import from Hugging Face" style="border: 1px solid gray; zoom:80%;"></a> </p>
+</li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Fine-tuning configuration</strong> section:</p>
+<ul>
+<li>Select a <strong>Fine-tuning type</strong>, which you want to apply to the model. </li>
+<li>Enter the <strong>Number of Epochs</strong>, which indicates how many times the model processes the entire dataset during training.</li>
+<li>Enter a number for <strong>Batch size</strong>, which implies the number of training examples used in one training iteration.</li>
+<li>Enter a value for the <strong>Learning rate</strong>, which implies the size of the steps taken during the optimization of a model.</li>
+<li>Click <strong>Next</strong>.
+<a class="glightbox" href="../images/fine-tuning-configuration-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/fine-tuning-configuration-section.png" alt="Fine-Tuning Configuration Section" title="Fine-Tuning Configuration Section" style="border: 1px solid gray; zoom:80%;"></a></li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Dataset</strong> section:</p>
+<ul>
+<li>
+<p>Select or upload the <strong>Training dataset</strong> from the dropdown to train the base model. It acts as the foundation for the model's learning.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The system accepts JSONL, CSV, and JSON files. The training, evaluation, and test files must follow a specific format with at least two columns: one for the prompt and one for the completion. You can download a sample file. </p>
+</div>
+<p><a class="glightbox" href="../images/upload-dataset.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/upload-dataset.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p><strong>Evaluation dataset</strong>: Select the <strong>dataset</strong> for the model evaluation and then click <strong>Next</strong>.</p>
+<ol>
+<li><strong>Use from training dataset (default)</strong>: This enables you to allocate a percentage of the training dataset for model evaluation. By default, 15% of the training dataset is allocated for model evaluation.</li>
+<li><strong>Upload evaluation dataset</strong>: Select or upload another dataset from the dropdown.</li>
+<li><strong>Skip the evaluation</strong>: It will skip the model evaluation process.
+<a class="glightbox" href="../images/use-traning-dataset.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/use-traning-dataset.png" alt="Dataset Section" title="Dataset Section" style="border: 1px solid gray; zoom:80%;"></a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<p>Select or upload the test dataset to test the fine-tuned model. Click <strong>Next</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The system accepts JSONL, CSV, and JSON files. </p>
+</div>
+<p><a class="glightbox" href="../images/test-data-section.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/test-data-section.png" alt=" Test Data Section" title="Test Data Section" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+<li>
+<p>Select the required hardware for fine-tuning from the dropdown menu and click <strong>Next</strong>. </p>
+</li>
+<li>
+<p>In the <strong>Weights &amp; Biases</strong> section, select your <strong>WandB connection</strong> from the drop-down list and click <strong>Next</strong>. 
+To create a Weight &amp; Biases connection, click <strong>+ New connection</strong>. For more information about how to create the WandB account, see<a href="https://galeadmin-kore.github.io/docs/gale/integrations/how-to-integrate-with-wandb/"> How-to-Integrate-with-WandB</a> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need an account with Weights and Biases. Enabling the integration with an API token will share your real-time fine-tuning status with the platform, allowing you to monitor your model's fine-tuning metrics comprehensively. Use the provided API token to create an integration, sending all fine-tuning process data to the associated account. </p>
+</div>
+</li>
+<li>
+<p>In the <strong>Review</strong> step, verify all the details before starting the fine-tuning. To modify previous steps, click <strong>Back</strong>. </p>
+</li>
+<li>
+<p>Click <strong>Start fine-tuning</strong>.<br />
+The model <strong>Overview</strong> page displays real-time progress. You can also view the model’s overview page by clicking the model on the <strong>Fine-tuned models</strong> page. <a href="../model-settings-overview/">Learn more</a>.</p>
+</li>
+</ol>
+<p>Once testing is completed, you can download the training file, test results, and test data for your reference.</p>
+<p>After fine-tuning, deploy the model in GALE or externally via the generated API endpoint. You can also create another fine-tuned model on top of this one.</p>
+<hr />
+<h1 id="create-a-fine-tuned-model-old-doc">Create a Fine-Tuned Model- Old Doc<a class="headerlink" href="#create-a-fine-tuned-model-old-doc" title="Permanent link">&para;</a></h1>
 <p>You can create a fine-tuned model in the Create a fine-tune model wizard, which involves the following 5 steps:</p>
 <ul>
 <li>General details</li>
