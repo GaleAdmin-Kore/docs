@@ -1641,6 +1641,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#manage-asynchronous-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Asynchronous Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manage Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#add-an-environment-variable" class="md-nav__link">
     <span class="md-ellipsis">
       Add an Environment Variable
@@ -1648,11 +1667,34 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#edit-or-delete-an-environment-variable" class="md-nav__link">
     <span class="md-ellipsis">
       Edit or Delete an Environment Variable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undeploy-the-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undeploy the Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the Agent
     </span>
   </a>
   
@@ -2823,6 +2865,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#manage-asynchronous-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Asynchronous Configuration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#manage-environment-variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manage Environment Variables
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Manage Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#add-an-environment-variable" class="md-nav__link">
     <span class="md-ellipsis">
       Add an Environment Variable
@@ -2830,11 +2891,34 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#edit-or-delete-an-environment-variable" class="md-nav__link">
     <span class="md-ellipsis">
       Edit or Delete an Environment Variable
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undeploy-the-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undeploy the Agent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the Agent
     </span>
   </a>
   
@@ -2859,42 +2943,68 @@
 
 
 <h1 id="configure-an-agent">Configure an Agent<a class="headerlink" href="#configure-an-agent" title="Permanent link">&para;</a></h1>
-<p>You can modify and manage the general details of your agent if required and add or manage environment variables. Environment variables allow you to capture commonly used values that different nodes can use. They can be secured and managed from the Agent Configurations page.</p>
-<h3 id="add-an-environment-variable">Add an Environment Variable<a class="headerlink" href="#add-an-environment-variable" title="Permanent link">&para;</a></h3>
-<p><strong>To add an environment variable, follow these steps</strong>:</p>
+<p>You can modify the general details of your agent, such as agent's name and description, asynchronous configuration, and environment variables. You can also undeploy as wll as delete the agent, if it's not in use. </p>
+<h2 id="manage-asynchronous-configuration">Manage Asynchronous Configuration<a class="headerlink" href="#manage-asynchronous-configuration" title="Permanent link">&para;</a></h2>
+<p>You can set the async mode configuration for the agent endpoint. If you change the mode, you must redeploy the agent.</p>
+<p>Steps to enable and configure the asynchronous mode:</p>
 <ol>
-<li>Click <strong>Agents</strong> on the top navigation bar of the application. The <strong>Agents</strong> page is displayed with the list of agents.</li>
 <li>
-<p>Click the required Agent you want to modify the details, click <strong>Configurations</strong> and then click <strong>Manage environment variables</strong>.</p>
-<p><a class="glightbox" href="../images/manage-environment-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-environment-variables.png" alt="Manage Environment Variables" title="Manage Environment Variables" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>On the <strong>Agents</strong> tab, click the the <strong>Agents</strong> for which you want to modify the configuration. The Agent Flow page is displayed. </p>
+</li>
+<li>
+<p>Click <strong>Configurations</strong> in the left navigation and then click <strong>Manage async</strong>.<br />
+<a class="glightbox" href="./images/manage-async.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/manage-async.png" alt="Manage Async Mode" title="Manage Async Mode" style="border: 1px solid gray; zoom:25%;"></a></p>
+</li>
+<li>
+<p>In the Configure asynchronous mode dialog, choose the option to enable or disable the mode as required. If you are enabling the asynchronous mode, provide a URL and an access token in the fields and click <strong>Save</strong>.<br />
+<a class="glightbox" href="./images/enable-async-mode.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/enable-async-mode.png" alt="Enable Async Mode" title="Enable Async Mode" style="border: 1px solid gray; zoom:50%;"></a></p>
+</li>
+<li>
+<p>If you have changed the mode, you must redeploy the agent - go to <strong>Agent endpoint</strong> in the left navigation and click the <strong>Deploy</strong> button on the top-right corner of the page.  </p>
+</li>
+</ol>
+<h2 id="manage-environment-variables">Manage Environment Variables<a class="headerlink" href="#manage-environment-variables" title="Permanent link">&para;</a></h2>
+<p>You can define reusable values and configurations for the agent using Environment variables. Those values
+can be used by different nodes in the agent flow.</p>
+<h3 id="add-an-environment-variable">Add an Environment Variable<a class="headerlink" href="#add-an-environment-variable" title="Permanent link">&para;</a></h3>
+<p>Steps to add an environment variable:</p>
+<ol>
+<li>
+<p>On the <strong>Agents</strong> tab, click the the <strong>Agents</strong> for which you want to modify the details. The Agent Flow page is displayed. </p>
+</li>
+<li>
+<p>Click <strong>Configurations</strong> in the left navigation and then click <strong>Manage environment variables</strong>.<br />
+<a class="glightbox" href="./images/manage-environment-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/manage-environment-variables.png" alt="Manage Environment Variables" title="Manage Environment Variables" style="border: 1px solid gray; zoom:25%;"></a></p>
 </li>
 <li>
 <p>The <strong>Create environment variable</strong> dialog box is displayed. Click <strong>Add</strong> or <strong>Add variable</strong>.</p>
 </li>
 <li>
-<p>Specify the following information on the <strong>Add variable</strong> dialog box:</p>
-<p><a class="glightbox" href="../images/add-varaible.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/add-varaible.png" alt="Add a Varaible" title="Add a Varaible" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p>Specify the following information on the <strong>Add variable</strong> dialog box:<br />
+<a class="glightbox" href="./images/add-varaible.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/add-varaible.png" alt="Add a Varaible" title="Add a Varaible" style="border: 1px solid gray; zoom:50%;"></a></p>
 <ul>
 <li><strong>Variable name</strong>: Provide a descriptive name for the variable.</li>
 <li><strong>Secure variable</strong>: Use the toggle to enable security for the variable. (If you are enabling the security, read the onscreen information carefully to understand the impact.)</li>
 <li><strong>Value</strong>: Enter the desired value for the variable.</li>
 <li><strong>Notes</strong> (optional): Enter any notes about how the variable should be used or its purpose.</li>
-<li>Click <strong>Save</strong>. The created variable is listed on the <strong>Create environment variable</strong> dialog box.</li>
 </ul>
+</li>
+<li>
+<p>Click <strong>Save</strong>. The created variable is listed on the <strong>Create environment variable</strong> dialog box.</p>
 </li>
 </ol>
 <h3 id="edit-or-delete-an-environment-variable">Edit or Delete an Environment Variable<a class="headerlink" href="#edit-or-delete-an-environment-variable" title="Permanent link">&para;</a></h3>
-<p><strong>To manage a variable, follow these steps</strong>:</p>
+<p>Steps to edit or delete a variable:</p>
 <ul>
 <li>
 <p>Click the three dots icon corresponding to the Name of the variable to edit the details of the variable or Delete to delete a variable.</p>
-<p><a class="glightbox" href="../images/manage-a-varaible.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="./images/manage-a-varaible.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/manage-a-varaible.png" alt="Manage a Variable" title="Manage a Variable" style="border: 1px solid gray; zoom:60%;"></a></p>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To delete an agent, you must first un-deploy it and then delete it.</p>
-</div>
+<h2 id="undeploy-the-agent">Undeploy the Agent<a class="headerlink" href="#undeploy-the-agent" title="Permanent link">&para;</a></h2>
+<p>You can undeploy the agent if it's no longer in use. Undeploying the agent will result in an immediate disconnection from all active instances. Click <strong>Proceed to undeploy</strong> and follow the on-screen instructions.</p>
+<h2 id="delete-the-agent">Delete the Agent<a class="headerlink" href="#delete-the-agent" title="Permanent link">&para;</a></h2>
+<p>You can delete an undeployed agent. Deleting the agent will remove all the associated data. Click <strong>Proceed to delete</strong> and follow the on-screen instructions.</p>
 
 
 
