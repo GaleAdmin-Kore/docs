@@ -14,7 +14,7 @@
         <link rel="prev" href="../../playground/explore-other-actions-to-perform-in-the-prompt-playground/">
       
       
-        <link rel="next" href="../upload-a-dataset/">
+        <link rel="next" href="../../settings/user-management/overview/">
       
       
       <link rel="icon" href="../../images/gale_favicon.svg">
@@ -22,7 +22,7 @@
     
     
       
-        <title>About Data - Kore ai Docs</title>
+        <title>Manage Datasets - Kore ai Docs</title>
       
     
     
@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#overview" class="md-skip">
+        <a href="#manage-datasets" class="md-skip">
           Skip to content
         </a>
       
@@ -235,7 +235,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About Data
+              Manage Datasets
             
           </span>
         </div>
@@ -2433,37 +2433,66 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Manage Datasets
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    About Data
+    Manage Datasets
   </span>
   
 
       </a>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../upload-a-dataset/" class="md-nav__link">
         
-  
-  <span class="md-ellipsis">
-    Upload a Dataset
-  </span>
+
   
 
-      </a>
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upload-a-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upload a Dataset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-or-delete-a-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download or Delete a Dataset
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2746,6 +2775,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#upload-a-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upload a Dataset
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-or-delete-a-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download or Delete a Dataset
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2762,8 +2817,30 @@
   
 
 
-<h1 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h1>
-<p>The data module streamlines data management by allowing you to store your datasets in the application instead of uploading them every time you test prompts in the playground or upload files for fine-tuning the model. Additionally, the module provides flexibility to store files of different file formats such as CSV, JSON, and JSONL without any additional formatting requirements, ultimately enhancing convenience for you while working with large datasets within the product.</p>
+<h1 id="manage-datasets">Manage Datasets<a class="headerlink" href="#manage-datasets" title="Permanent link">&para;</a></h1>
+<p>The Data module allows you to store datasets in the application, eliminating the need to upload files repeatedly when testing prompts or fine-tuning models. It supports CSV, JSON, and JSONL file formats without additional formatting requirements.</p>
+<h2 id="upload-a-dataset">Upload a Dataset<a class="headerlink" href="#upload-a-dataset" title="Permanent link">&para;</a></h2>
+<p>You can upload a dataset of your choice in CSV, JSON, or JSONL format.</p>
+<p>Steps to upload a dataset:</p>
+<ol>
+<li>
+<p>Click <strong>Data</strong> on the top navigation bar. The <strong>Data</strong> page is displayed.<br />
+<a class="glightbox" href="./images/navigate-to-data-module.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/navigate-to-data-module.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:50%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Upload dataset</strong> and select your file. The uploaded file will appear on the Data page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Files uploaded in the Playground or model fine-tuning wizard are automatically saved in the Data tab for future use.</p>
+</div>
+</li>
+</ol>
+<h2 id="download-or-delete-a-dataset">Download or Delete a Dataset<a class="headerlink" href="#download-or-delete-a-dataset" title="Permanent link">&para;</a></h2>
+<p>You can download or delete the dataset if it’s no longer used on the platform. Deleting a dataset used in Playground experiments may cause errors.</p>
+<ul>
+<li>Click the three dots icon in the last column, and choose <strong>Download</strong> or <strong>Delete</strong> as required.<br />
+<a class="glightbox" href="./images/download-or-delete-datasets.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./images/download-or-delete-datasets.png" alt="Navigate to Data Module" title="Navigate to Data Module" style="border: 1px solid gray; zoom:50%;"></a></li>
+</ul>
 
 
 
@@ -2860,13 +2937,13 @@
         
         
           
-          <a href="../upload-a-dataset/" class="md-footer__link md-footer__link--next" aria-label="Next: Upload a Dataset">
+          <a href="../../settings/user-management/overview/" class="md-footer__link md-footer__link--next" aria-label="Next: About User Management">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Upload a Dataset
+                About User Management
               </div>
             </div>
             <div class="md-footer__button md-icon">
