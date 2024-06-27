@@ -95,7 +95,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#view-the-generated-api-endpoint" class="md-skip">
+        <a href="#view-api-endpoint-deployment-history" class="md-skip">
           Skip to content
         </a>
       
@@ -1847,9 +1847,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#api-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#api-endpoint-usecase" class="md-nav__link">
     <span class="md-ellipsis">
       API Endpoint Usecase
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment History
     </span>
   </a>
   
@@ -2786,9 +2810,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#api-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Endpoint
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API Endpoint">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#api-endpoint-usecase" class="md-nav__link">
     <span class="md-ellipsis">
       API Endpoint Usecase
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployment-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deployment History
     </span>
   </a>
   
@@ -2812,13 +2860,14 @@
   
 
 
-<h1 id="view-the-generated-api-endpoint">View the Generated API Endpoint<a class="headerlink" href="#view-the-generated-api-endpoint" title="Permanent link">&para;</a></h1>
+<h1 id="view-api-endpoint-deployment-history">View API Endpoint &amp; Deployment History<a class="headerlink" href="#view-api-endpoint-deployment-history" title="Permanent link">&para;</a></h1>
+<h2 id="api-endpoint">API Endpoint<a class="headerlink" href="#api-endpoint" title="Permanent link">&para;</a></h2>
 <p>After the model is deployed, the API endpoint is generated which implies that your fine-tuned model is ready for inferencing externally and across the other sections in GALE.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You will receive an email notification after your model deployment is completed and an API is generated and ready to use.</p>
 </div>
-<p><strong>To view the API Endpoint, follow these steps</strong>:</p>
+<p>To view the API Endpoint, follow these steps:</p>
 <ol>
 <li>
 <p>Click the <strong>Model Endpoint</strong> tab in the left panel on the <strong>Models</strong> page of your fine-tuned model.</p>
@@ -2829,7 +2878,7 @@
 </li>
 </ol>
 <p>The API endpoint is available in 3 formats. You can copy and use the same as required.</p>
-<h2 id="api-endpoint-usecase">API Endpoint Usecase<a class="headerlink" href="#api-endpoint-usecase" title="Permanent link">&para;</a></h2>
+<h3 id="api-endpoint-usecase">API Endpoint Usecase<a class="headerlink" href="#api-endpoint-usecase" title="Permanent link">&para;</a></h3>
 <p>You can use the deployed fine-tuned model in GALE for the following use cases:</p>
 <ul>
 <li>
@@ -2839,6 +2888,15 @@
 <p>In an agent in the agent flow builder via the Gen AI Node.</p>
 </li>
 </ul>
+<h2 id="deployment-history">Deployment History<a class="headerlink" href="#deployment-history" title="Permanent link">&para;</a></h2>
+<p>After deploying a model, you can modify its parameters and redeploy the updated version. The deployment history table tracks the complete life cycle of the model, offering detailed information for each version. This includes the deployment name, the timestamp when it was deployed, the deployment duration, the individual who performed the deployment, and other relevant details. </p>
+<p>Additionally, the system automatically appends a version number to the deployment name and increments it with each subsequent redeployment, ensuring a clear and organized record of all model versions and their respective changes.</p>
+<p>For example, if a model named "Flan T5" is deployed for the first time, it will be named as "Flan T5_v1". Subsequent deployments will be named as "Flan T5_v2", "Flan T5_v3", and so on, incrementing the version number with each redeployment.</p>
+<p>The most recent deployment is marked with a green ticket next to the model name. Click on any deployment version to view the following details.</p>
+<p><strong>General details</strong>: This section displays the model's basic information, such as its name, description, tags, optimization technique, parameters, the hardware used, and deployment duration.</p>
+<p><strong>Deployment details</strong>: This section includes who deployed the model, the start and end timestamps of deployment, the deployment duration, and its status (Success, Failed, or Deploying). In case of a failed deployment, hover over “Status” to view the reason for the failure.</p>
+<p><strong>Un-deployment details</strong>: This section appears only if the model is undeployed either automatically by the system or manually. In the case of manual un-deployment, the person who initiated the un-deployment, along with the start and end timestamps of the process, is displayed.</p>
+<p><a class="glightbox" href="../images/deployment-history.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/deployment-history.png" alt="Deployment History" title="Deployment History" style="border: 1px solid gray; zoom:80%;"></a></p>
 
 
 

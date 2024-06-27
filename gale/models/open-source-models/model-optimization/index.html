@@ -2933,7 +2933,10 @@
 <h1 id="model-optimization-techniques">Model Optimization Techniques<a class="headerlink" href="#model-optimization-techniques" title="Permanent link">&para;</a></h1>
 <p>Model optimization is the process of improving a machine learning model's performance by making it more efficient and effective without compromising its accuracy or predictive power. This involves a variety of techniques aimed at reducing the computational resources required for the model, speeding up inference time, and minimizing latency. The goal is to ensure that the large model operates swiftly and efficiently, particularly in real-time or resource-constrained environments.</p>
 <p>The GALE supports the following optimization types: CTranslate2 and vLLM.</p>
-<p><strong>Note</strong>: The model optimization is supported only for the Kore-hosted models.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The model optimization is supported only for the Kore-hosted models.</p>
+</div>
 <h2 id="ctranslate2">CTranslate2<a class="headerlink" href="#ctranslate2" title="Permanent link">&para;</a></h2>
 <p>CTranslate2 is a fast and full-featured inference engine for Transformer models. It aims to provide comprehensive inference features and be the most efficient and cost-effective solution to deploy standard neural machine translation systems on CPU and GPU. </p>
 <p>Key advantages of using CTranslate2:</p>
@@ -2954,7 +2957,10 @@
 <li><strong>Advanced Caching Mechanisms</strong>: Adjusts computation precision layer by layer, using mixed-precision training and inference to enhance performance while maintaining accuracy.</li>
 </ul>
 <p>Supported Quantization: float16 (default), bfloat16, and Float32.</p>
-<p><strong>Note</strong>: The T4 machine does not support bfloat16.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The T4 machine does not support bfloat16.</p>
+</div>
 <p><a href="https://docs.vllm.ai/en/stable/index.html">Learn more</a>.</p>
 <h2 id="ctranslate2-vs-vllm">CTranslate2 vs. vLLM<a class="headerlink" href="#ctranslate2-vs-vllm" title="Permanent link">&para;</a></h2>
 <p>Choosing between CTranslate2 and vLLM depends on your model's needs and deployment environment. CTranslate2 suits small to medium-sized models and low-latency scenarios. The vLLM excels with large models needing extensive computational resources and advanced parallel processing capabilities.</p>
