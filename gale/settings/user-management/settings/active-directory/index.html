@@ -2964,7 +2964,7 @@
 
 
 <h1 id="active-directory-configuring-automatic-user-data-synchronization">Active Directory: Configuring Automatic User Data Synchronization<a class="headerlink" href="#active-directory-configuring-automatic-user-data-synchronization" title="Permanent link">&para;</a></h1>
-<p>By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the <a href="../../../settings-overview/">Settings</a> console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. </p>
+<p>By configuring Active Directory (AD) import, you can seamlessly bring your organizational user information into the <a href="../../../settings-overview/" target="_blank">Settings</a> console and keep it in sync with a single source of truth. This bulk import eliminates the need for email invitations or manual user info file imports, making the process more efficient. </p>
 <p>Moreover, the automatic synchronization (auto sync) feature ensures that Settings always has the most up-to-date user information, even reflecting deleted and modified records in the AD.</p>
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
@@ -2973,10 +2973,10 @@
 
 <p><strong>Key Steps for Configuring AD Import</strong></p>
 <ol>
-<li><a href="./#step-1-set-up-the-connection">Set up the Connection</a>: Connect the <strong>Settings</strong> Console to your organization's AD to enable data import.</li>
-<li><a href="./#step-2-import-organization-units">Select and Import the Organizational Units (OUs)</a>: Choose specific OUs or all OUs from which to import key user information.</li>
-<li><a href="./#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-ad">Specify User Attributes and Configure Rules for Selective Import from AD</a>: Define desired user attributes (profile fields) that need to be imported from your active directory. Configure the inclusion and exclusion rules to control the information you need.</li>
-<li><a href="./#step-4-schedule-automatic-ad-sync">Schedule Automatic AD Sync</a>: Set up automatic or periodic sync schedules to keep user data current and reflect any changes or deletions from AD.</li>
+<li><a href="./#step-1-set-up-the-connection" target="_blank">Set up the Connection</a>: Connect the <strong>Settings</strong> Console to your organization's AD to enable data import.</li>
+<li><a href="./#step-2-import-organization-units" target="_blank">Select and Import the Organizational Units (OUs)</a>: Choose specific OUs or all OUs from which to import key user information.</li>
+<li><a href="./#step-3-specify-user-attributes-and-configure-rules-for-selective-import-from-ad" target="_blank">Specify User Attributes and Configure Rules for Selective Import from AD</a>: Define desired user attributes (profile fields) that need to be imported from your active directory. Configure the inclusion and exclusion rules to control the information you need.</li>
+<li><a href="./#step-4-schedule-automatic-ad-sync" target="_blank">Schedule Automatic AD Sync</a>: Set up automatic or periodic sync schedules to keep user data current and reflect any changes or deletions from AD.</li>
 </ol>
 <h2 id="steps-to-configure-ad-sync">Steps to Configure AD Sync<a class="headerlink" href="#steps-to-configure-ad-sync" title="Permanent link">&para;</a></h2>
 <ol>
@@ -2997,12 +2997,8 @@
 
 <h3 id="step-1-set-up-the-connection">Step 1: Set up the Connection<a class="headerlink" href="#step-1-set-up-the-connection" title="Permanent link">&para;</a></h3>
 <ol>
-<li>
-<p>Configure the AD connection by providing the following mandatory fields:</p>
-</li>
-<li>
-<p><strong>Host Name</strong>: The domain's hostname or IP address where AD services run.</p>
-</li>
+<li>Configure the AD connection by providing the following mandatory fields:</li>
+<li><strong>Host Name</strong>: The domain's hostname or IP address where AD services run.</li>
 <li><strong>Server Port</strong>: The network port number used by the domain host to communicate over the network.</li>
 <li><strong>Base DN</strong>: The server location for users and groups in a domain.</li>
 <li><strong>User ID</strong>: The identity used to log into the AD.</li>
@@ -3018,12 +3014,8 @@
 <h3 id="step-2-import-organization-units">Step 2: Import Organization Units<a class="headerlink" href="#step-2-import-organization-units" title="Permanent link">&para;</a></h3>
 <p>Follow the steps below to configure and import user data from key organizational units such as Sales, Finance, or Operations in your AD:</p>
 <ol>
-<li>
-<p>Select one of the following options based on your requirements:</p>
-</li>
-<li>
-<p><strong>Import all organization units</strong>: Imports user information from all the organization units.</p>
-</li>
+<li>Select one of the following options based on your requirements:</li>
+<li><strong>Import all organization units</strong>: Imports user information from all the organization units.</li>
 <li><strong>Do not import organization units</strong>: Do not import user information from any organization units in the AD.</li>
 <li>
 <p><strong>Import only the following organization units</strong>: Imports user information only from the organization unit you select.</p>
@@ -3050,13 +3042,13 @@
 <p>(Optional) In addition to the default fields, you can add custom fields for your user profile information and map them to a corresponding field in the AD. To add a custom field mapping, follow the steps below:</p>
 </li>
 </ol>
-<ol start="a"><li>Click <b>Add Field</b> in the <b>Custom Fields</b> section.</li>
+<ul><li>Click <b>Add Field</b> in the <b>Custom Fields</b> section.</li>
 <li>Enter the custom field you want to map to your user profile in the <b>Custom field name</b> textbox.</li>
 <li>Enter the corresponding AD field in the <b>Field from Active Directory</b> textbox.</li>
 <li>(Optional) Click the <b>tag</b> icon to set the custom field as the primary field. However, to delete this field, you must first remove the primary field tag.</li>
 <li>Click <b>Next</b> to complete user profile fields' mapping and proceed.</li>
 <a class="glightbox" href="../images/custom-field-management.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/custom-field-management.png" alt="manage custom field" title="manage custom field" style="border: 1px solid gray; zoom:75%;"></a>
-</ol>
+</ul>
 
 <p>To remove a field, click the <strong>Delete</strong> icon as shown below.</p>
 <p><a class="glightbox" href="../images/delete-custom-field.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/delete-custom-field.png" alt="delete custom field" title="delete custom field" style="border: 1px solid gray; zoom:75%;"></a></p>
@@ -3110,16 +3102,13 @@
 <p>You can run AD-Sync anytime by choosing the run now option on the settings page.</p>
 </div>
 
-<ol>
-<li>
-<p>Select the following sync fields:</p>
-</li>
-<li>
-<p><strong>Sync Frequency</strong>: Select from <em>daily,</em> <em>weekly</em>, <em>monthly</em>, or <em>other _sync periods. The default selection is _Daily</em>.</p>
-</li>
+<ol start="2"><li>Select the following sync fields:</li></ol>
+
+<ul>
+<li><strong>Sync Frequency</strong>: Select from <em>daily,</em> <em>weekly</em>, <em>monthly</em>, or <em>other _sync periods. The default selection is _Daily</em>.</li>
 <li><strong>Sync Start</strong>: Click the Calendar icon and choose a date from the widget to start the AD sync. The default selection is the current date. </li>
 <li><strong>Time</strong>: According to the selected sync frequency, select when the AD sync should occur. The default setting is 12:00 PM.</li>
-</ol>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul><li>You can select only one date from the calendar for weekly and monthly syncs.</li>
@@ -3179,8 +3168,8 @@
 <p><a class="glightbox" href="../images/success-sync.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/success-sync.png" alt="success sync" title="success sync" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>For a <strong>failed</strong> sync, you will receive the following email:    </p>
 <p><a class="glightbox" href="../images/failed-sync.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/failed-sync.png" alt="failed sync" title="failed sync" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>An alternative way to add users to your account (without using AD sync) is to invite them via email. <a href="../../../../getting-started/sign-up-sign-in/#invite-a-user-to-your-account">Learn more</a>.</p>
-<p>To learn more about other administrator features on the <strong>Settings</strong> Console, click <a href="../../../settings-overview/">here</a>.</p>
+<p>An alternative way to add users to your account (without using AD sync) is to invite them via email. <a href="../../../../getting-started/sign-up-sign-in/#invite-a-user-to-your-account" target="_blank">Learn more</a>.</p>
+<p>To learn more about other administrator features on the <strong>Settings</strong> Console, click <a href="../../../settings-overview/" target="_blank">here</a>.</p>
 
 
 
