@@ -1862,6 +1862,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configurations
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1871,6 +1882,45 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#undeploy-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undeploy the Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -2792,6 +2842,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#undeploy-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undeploy the Model
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-the-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete the Model
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2813,20 +2889,20 @@
 <p>Steps to modify the settings of your fine-tuned model:</p>
 <ol>
 <li>
-<p>Go to <strong>Models</strong> &gt; <strong>Fine-tuned models</strong> and click the required model from the list. The model's Overview page is displayed. Click <strong>Configurations</strong> in the left navigation. The <strong>Configurations</strong> page is displayed.<br />
+<p>Go to <strong>Models</strong> &gt; <strong>Fine-tuned models</strong> and click the required model from the list. The model's Overview page is displayed. </p>
+</li>
+<li>
+<p>Click <strong>Configurations</strong> in the left navigation. The <strong>Configurations</strong> page is displayed.<br />
 <a class="glightbox" href="../images/configure-fine-tuned-model.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/configure-fine-tuned-model.png" alt="Configure Fine-Tuned Model" title="Configure Fine-Tuned Model" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Make any required changes and the changes are auto-saved.</p>
-</li>
-<li>
-<p>You also have the option to suspend your deployed fine-tuned model using the <strong>Proceed to undeploy</strong> button. It immediately un-deploys the model and is not available for any inferencing requests.</p>
+<p>Make any required changes in the configurations. The changes are auto-saved.</p>
 </li>
 </ol>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To delete a fine-tuned model, you must first un-deploy it and then delete it. </p>
-</div>
+<h2 id="undeploy-the-model">Undeploy the Model<a class="headerlink" href="#undeploy-the-model" title="Permanent link">&para;</a></h2>
+<p>You can undeploy the model if it's no longer in use. Undeploying the modle will result in an immediate disconnection from all active instances. Click <strong>Proceed to undeploy</strong> on the Configurations page and follow the on-screen instructions.</p>
+<h2 id="delete-the-model">Delete the Model<a class="headerlink" href="#delete-the-model" title="Permanent link">&para;</a></h2>
+<p>You can delete an undeployed model. Deleting the model will remove all the associated data. Click <strong>Proceed to delete</strong> on the Configurations page and follow the on-screen instructions.</p>
 
 
 
