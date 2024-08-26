@@ -2921,20 +2921,14 @@
 <p><strong>Integration Type</strong>: Select the integration type for the connection—synchronous or Asynchronous—and choose the timeout duration for the integration.</p>
 <ul>
 <li><strong>Synchronous</strong>: The allowed range is 5 to 180 seconds (3 minutes). The default is 60 seconds.</li>
-<li><strong>Asynchronous</strong>: The allowed range is 60 seconds to 24 hours (86,400 seconds). The default is 60 seconds.</li>
+<li><strong>Asynchronous</strong>: The allowed range is 30 seconds to 300 seconds (5 minutes). The default is 60 seconds.</li>
 </ul>
 <p>The node will trigger a timeout error if the request is not completed within the selected time frame.</p>
-<div class="admonition note">
-<p class="admonition-title">Notes</p>
-<ul>
-<li>
-<p>The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.</p>
-</li>
-<li>
-<p>Timeout precedence: Agent timeout &gt; Node timeout &gt; Third-party API endpoint timeout.</p>
-</li>
-</ul>
-</div>
+<p>!!! "Notes"</p>
+<div class="language-text highlight"><pre><span></span><code>* The key difference between synchronous and asynchronous integration types is how the integration processes the request and response. Synchronous integrations block the client until the response is received, while asynchronous integrations allow the client to continue working while the integration processes the request.
+
+* Timeout precedence: Agent timeout &gt; Node timeout &gt; Third-party API endpoint timeout.
+</code></pre></div>
 </li>
 <li>
 <p><strong>Request Definition</strong>: Define the details of the service request to make the call and fetch the data. Click <strong>Define Request</strong> and enter or select the following details in the Edit Request dialog box:<br />
