@@ -2842,18 +2842,18 @@
 <p>Agent flows in GALE allow you to define input and output variables, which become accessible as context objects throughout the execution of the flow.</p>
 <ul>
 <li>Input Variables: The input variables provide initial data to the agent flow. </li>
-<li>Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture results you want to return from the agent.</li>
+<li>Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture the results you want to return from the agent.</li>
 </ul>
+<p><strong>Using Variables in the Agent Flow</strong>:</p>
 <p>Once the input and output variables are defined, you can access these variables using the context object syntax, and use them throughout the flow:</p>
 <ul>
-<li>Input variables are available immediately after the Start node.</li>
-<li>Output variables can be set in any node and are collected at the End node.</li>
+<li>Input variables are available immediately after the Start node. These variables can be accessed using the context object syntax: <code>context.steps.Start.inputVariable</code></li>
+<li>Output variables can be set in any node and are collected at the End node. For example, you can select a defined output variable in the End node and assign it the output of a GenAI node {{context.steps.GenAInode.output}} as a value.</li>
 </ul>
-<p>You can initiate a fresh agent flow and specify the inputs required to initialize the process. Within the Start node, essential variables necessary for the flow's execution are received from the front end through API requests. Correspondingly, the End node gathers outputs from the preceding nodes and transmits them for utilization by the front end as an API.</p>
-<p><strong>Steps to manage input variables</strong>:</p>
+<p><strong>Steps to add input variables</strong>:</p>
 <ol>
 <li>
-<p>On the top of the canvas of the Agents page, click the <strong>Manage I/O</strong> button.</p>
+<p>On the top of the Agents page canvas, click the <strong>Manage I/O</strong> button.</p>
 <p>The <strong>Manage Input &amp; Output</strong> dialog is displayed.</p>
 <p><a class="glightbox" href="../images/manage-input-output-variables.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/manage-input-output-variables.png" alt="Manage Input Output Variables" title="Manage Input Output Variables" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
@@ -2866,37 +2866,28 @@
 <p>In the <strong>Name(key)</strong> field, provide a name for the input variable. For example, Product_ID.</p>
 </li>
 <li>
-<p>In the <strong>Type</strong> field, select a data type from the drop-down list. 
-The options are Text, Number, Boolean, and Remote file. 
+<p>In the <strong>Type</strong> field, select a data type from the drop-down list - Text, Number, Boolean, or Remote file.
 If you want to make the data type mandatory, then enable the <strong>Mandatory</strong> toggle.</p>
 <ul>
 <li>
-<p>If you select the <strong>Text</strong>, <strong>Number</strong>, or <strong>Boolean</strong> data types, the <strong>Default value</strong> field appears.</p>
-<ul>
-<li>You can enable the <strong>Default value</strong> field to set a default value for the input variable. For example, 9393JAS.</li>
-</ul>
+<p>If you select the <strong>Text</strong>, <strong>Number</strong>, or <strong>Boolean</strong> data types, the <strong>Default value</strong> field appears. You can enable the <strong>Default value</strong> field to set a default value for the input variable. For example, 9393JAS.</p>
 </li>
 <li>
-<p>If you select the <strong>Remote file</strong> data type, the <strong>File url timeout</strong> field appears.</p>
-<ul>
-<li>
-<p>Enter the File URL timeout duration in minutes.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).</p>
-</div>
-</li>
-</ul>
+<p>If you select the <strong>Remote file</strong> data type, the <strong>File url timeout</strong> field appears. Enter the File URL timeout duration in minutes.</p>
+<div class="language-text highlight"><pre><span></span><code>!!! note
+
+    The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
+</code></pre></div>
 <p><a class="glightbox" href="../images/url-timeout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:50%;"></a></p>
 </li>
 </ul>
 </li>
 <li>
 <p>Click <strong>Save</strong>.</p>
-<p>The input variable is displayed under the Input tab of the <strong>Manage Input &amp; Output</strong> dialog.</p>
+<p>The input variable is displayed on the Input tab of the <strong>Manage Input &amp; Output</strong> dialog.</p>
 </li>
 </ol>
-<p><strong>Steps to manage output variables</strong>:</p>
+<p><strong>Steps to add output variables</strong>:</p>
 <ol>
 <li>
 <p>On the top of the canvas of the Agents page, click the <strong>Manage I/O</strong> button.</p>
@@ -2910,16 +2901,15 @@ If you want to make the data type mandatory, then enable the <strong>Mandatory</
 <li>
 <p>In the <strong>Name(key)</strong> field, provide a name for the output variable.</p>
 </li>
-<li>In the <strong>Type</strong> field, select a data type from the drop-down list.
-The options are String, Number, and Boolean.</li>
+<li>In the <strong>Type</strong> field, select a data type from the drop-down list - String, Number, or Boolean.</li>
 <li>
 <p>Click <strong>Save</strong>. </p>
-<p>The output variable is displayed under the Output tab of the <strong>Manage Input &amp; Output</strong> dialog.</p>
+<p>The output variable is displayed on the Output tab of the <strong>Manage Input &amp; Output</strong> dialog. </p>
 </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You can create multiple input and output variables based on your use case.</p>
+<p>You can also add an output variable in the End node using the <strong>Add a Key</strong> option on the node's interface.</p>
 </div>
 
 
