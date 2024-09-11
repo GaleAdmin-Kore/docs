@@ -2844,14 +2844,12 @@
 <li>Input Variables: The input variables provide initial data to the agent flow. </li>
 <li>Output Variables: The output variables store and make accessible the derived values from the flow. You must define output variables to capture results you want to return from the agent.</li>
 </ul>
-<p>Once the input and output variables are defined, they can be utilized throughout the flow:</p>
+<p>Once the input and output variables are defined, you can access these variables using the context object syntax, and can be utilized throughout the flow:</p>
 <ul>
 <li>Input variables are available immediately after the Start node.</li>
 <li>Output variables can be set in any node and are collected at the End node.</li>
 </ul>
-<p>You can access these variables using the context object syntax.</p>
 <p>You can initiate a fresh agent flow and specify the inputs required to initialize the process. Within the Start node, essential variables necessary for the flow's execution are received from the front end through API requests. Correspondingly, the End node gathers outputs from the preceding nodes and transmits them for utilization by the front end as an API.</p>
-<p>Once the input and output variables have been defined, they become accessible within the context objects and can be utilized throughout the flow's progression.</p>
 <p><strong>Steps to manage input variables</strong>:</p>
 <ol>
 <li>
@@ -2867,25 +2865,35 @@
 <li>
 <p>In the <strong>Name(key)</strong> field, provide a name for the input variable. For example, Product_ID.</p>
 </li>
-<li>In the <strong>Type</strong> field, select a data type from the drop-down list. 
-The options are Text, Number, Boolean, and Remote file.</li>
-</ol>
-<p>If you want to make the data type mandatory, then enable the <strong>Mandatory</strong> toggle.
-    *  If you select the <strong>Text</strong>, <strong>Number</strong>, or <strong>Boolean</strong> data types, the <strong>Default value</strong> field appears.
-        * You can enable the <strong>Default value</strong> field to set a default value for the input variable. For example, 9393JAS.</p>
-<div class="language-text highlight"><pre><span></span><code>*  If you select the **Remote file** data type, the **File url timeout** field appears.
-    *  Enter the File URL timeout duration in minutes.
-
-        !!! note
-
-            The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).
-
-     &lt;img src=&quot;../images/url-timeout.png&quot; alt=&quot;File URL timeout&quot; title=&quot;File URL timeout&quot; style=&quot;border: 1px solid gray; zoom:80%;&quot;&gt;
-
-     For integrations, you can select the **Remote file** data type. This allows access to external data sources.
-</code></pre></div>
-<ol>
-<li>Click <strong>Save</strong>.</li>
+<li>
+<p>In the <strong>Type</strong> field, select a data type from the drop-down list. 
+The options are Text, Number, Boolean, and Remote file. 
+If you want to make the data type mandatory, then enable the <strong>Mandatory</strong> toggle.</p>
+<ul>
+<li>
+<p>If you select the <strong>Text</strong>, <strong>Number</strong>, or <strong>Boolean</strong> data types, the <strong>Default value</strong> field appears.</p>
+<ul>
+<li>You can enable the <strong>Default value</strong> field to set a default value for the input variable. For example, 9393JAS.</li>
+</ul>
+</li>
+<li>
+<p>If you select the <strong>Remote file</strong> data type, the <strong>File url timeout</strong> field appears.</p>
+<ul>
+<li>
+<p>Enter the File URL timeout duration in minutes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default File URL timeout is 5 minutes. You can set it to anywhere between 5 minutes and 7 days (10080 minutes).</p>
+</div>
+</li>
+</ul>
+<p><a class="glightbox" href="../images/url-timeout.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/url-timeout.png" alt="File URL timeout" title="File URL timeout" style="border: 1px solid gray; zoom:80%;"></a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Click <strong>Save</strong>.</p>
+</li>
 </ol>
 <p>The input variable is displayed under the Input tab of the <strong>Manage Input &amp; Output</strong> dialog.</p>
 <p><strong>Steps to manage output variables</strong>:</p>
