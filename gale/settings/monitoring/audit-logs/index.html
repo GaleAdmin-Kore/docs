@@ -11,7 +11,7 @@
       
       
       
-        <link rel="prev" href="../../integrations/integrate-with-wandb/">
+        <link rel="prev" href="../overview/">
       
       
       
@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#monitoring" class="md-skip">
+        <a href="#audit-logs" class="md-skip">
           Skip to content
         </a>
       
@@ -2814,6 +2814,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Monitoring
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -3132,22 +3153,18 @@
   
 
 
-<h1 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h1>
-<p>The <strong>Monitoring</strong> module in GALE helps track logs of events, actions, and changes across your account for the linked users based on the permissions provided to them for different modules. </p>
-<p>It provides visibility into activities and modifications for modules such as roles, integrations, models, agents, users, datasets, guardrails, and playground, ensuring that you can maintain oversight and respond to any issues promptly. </p>
-<p>Monitoring is crucial for maintaining security, compliance, and operational efficiency within your GALE account.</p>
-<p>Monitoring supports the following feature:</p>
-<h2>Audit Logs</h2>
-
-<p>On the <strong>Settings</strong> console, you can monitor activities related to your account's modules <strong>and those of the users linked to your account</strong>. The dashboard offers a unified location to track module events for the selected time period.</p>
-<p>The <strong>Audit Logs</strong> Dashboard comprehensively logs all the events of your account, covering categories and events as detailed in the table below. When you click the <strong>&gt;</strong> (expand arrow), each event entry displays the following:</p>
+<h1 id="audit-logs">Audit Logs<a class="headerlink" href="#audit-logs" title="Permanent link">&para;</a></h1>
+<p>On the <strong>Settings</strong> console, you can monitor events related to your account's modules <strong>and actions taken by the users linked to your account</strong>. </p>
+<p><strong>Audit Logs</strong> offer a comprehensive and time-based view of all the account events. Each log entry includes:</p>
 <ul>
-<li>A message about the action taken/event.</li>
-<li>The associated metadata including the <strong>User ID</strong>, <strong>Email ID</strong>, and <strong>IP address</strong> of the user who executed the event.
-<a class="glightbox" href="../images/audit-logs-metadata.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/audit-logs-metadata.png" alt="audit logs metadata" title="audit logs metadata" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li>Event name and category.</li>
+<li>The user who performed the action.</li>
+<li>Date and time of the event.</li>
+<li>Detailed description of the action.</li>
 </ul>
-<p>The event metadata provides business users with actionable insights, helping them identify patterns in user activity within their accounts. It also aids in detecting anomalies, spotting unauthorized usage, and enhancing overall account security.</p>
-<p>You can specify a <strong>current</strong> or <strong>past period</strong> to view the logs and have full visibility into the activities and modifications in your account. <a href="./#steps-to-set-time-range-for-audit-logs" target="_blank">Learn more</a>.</p>
+<p><a class="glightbox" href="../images/audit-logs-metadata.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/audit-logs-metadata.png" alt="audit logs metadata" title="audit logs metadata" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>The event metadata provides business users with actionable insights, helping them in efficiently identifying patterns in user activities within their accounts. It also aids in detecting anomalies, spotting unauthorized usage, and enhancing overall account security.</p>
+<p>You can specify a <strong>current</strong> or <strong>past period</strong> to view the logs and have complete visibility into the activities and modifications in your account. <a href="./#steps-to-set-time-range-for-audit-logs" target="_blank">Learn more</a>.</p>
 <p>Additionally, you can set <strong>custom filters</strong> based on a specific category, event, or user value to view only the required audit logs. <a href="./#steps-to-add-a-custom-filter" target="_blank">Learn more</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3184,7 +3201,7 @@
   <tr>
    <td>Logout
    </td>
-   <td>Tracks the account log out activity.
+   <td>Tracks the account logout activity.
    </td>
    <td>
 <ul>
@@ -3784,8 +3801,8 @@
 </ol>
 <p>All the log entries relevant to the applied filter(s) are displayed, as shown below.
 <a class="glightbox" href="../images/log-entries.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/log-entries.png" alt="log entries" title="log entries" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>To clear the filter settings, click <strong>Clear All</strong>.
-<a class="glightbox" href="../images/clear-all-filters.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/clear-all-filters.png" alt="clear all fllters" title="clear all fllters" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>To clear the filter settings, click <strong>Clear All</strong>.</p>
+<p><a class="glightbox" href="../images/clear-all-filters.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/clear-all-filters.png" alt="clear all fllters" title="clear all fllters" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p>The number of filters you have applied is displayed on the <strong>Filter</strong> icon.
 <a class="glightbox" href="../images/applied-filters.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/applied-filters.png" alt="applied filters" title="applied filters" style="border: 1px solid gray; zoom:75%;"></a></p>
 <h3 id="add-multiple-filters">Add Multiple Filters<a class="headerlink" href="#add-multiple-filters" title="Permanent link">&para;</a></h3>
@@ -3933,7 +3950,7 @@ Both operators cannot be used together.</p></div>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../integrations/integrate-with-wandb/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Integrate with Weights &amp; Biases">
+          <a href="../overview/" class="md-footer__link md-footer__link--prev" aria-label="Previous: About Monitoring">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -3943,7 +3960,7 @@ Both operators cannot be used together.</p></div>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Integrate with Weights & Biases
+                About Monitoring
               </div>
             </div>
           </a>
