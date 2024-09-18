@@ -90,6 +90,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#users" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -2861,6 +2866,148 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#users-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Users Dashboard
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Users Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-a-new-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add a New User
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Add a New User">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#invite-email-invitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invite (Email Invitation)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resend-invite" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resend Invite
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-bulk-import" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import (Bulk Import)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Import (Bulk Import)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-user-data-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import User Data File
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Import History
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete-a-userbulk-delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete a User/Bulk Delete
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#search-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Search User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unlock-a-locked-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Unlock a Locked User
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#change-user-role" class="md-nav__link">
+    <span class="md-ellipsis">
+      Change User Role
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Change User Role">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bulk-role-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bulk Role Change
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -2878,9 +3025,210 @@
   
 
 
-  <h1>Users</h1>
+<h1 id="users">Users<a class="headerlink" href="#users" title="Permanent link">&para;</a></h1>
+<p>The <strong>Users</strong> feature simplifies account administration through centralized tools for inviting, importing, and managing users. The tools work together to streamline user administration and ensure efficient collaboration, access control, and status monitoring.</p>
+<p><strong>Key Features</strong></p>
+<ul>
+<li><strong>User Invitation</strong>: Easily invite individual users or groups via email.</li>
+<li><strong>Invitation Management</strong>: Resend invitations for users who haven't yet joined.</li>
+<li><strong>Bulk Import</strong>: Add multiple users efficiently by uploading CSV or TXT files.</li>
+<li><strong>Active Directory Sync</strong>: Synchronize user data directly from your organization's Active Directory.</li>
+<li><strong>Role Management</strong>: Assign and reassign user roles to control access and permissions.</li>
+<li><strong>Status Tracking</strong>: Monitor user statuses (active, inactive, locked) from a centralized dashboard.</li>
+<li><strong>Account Unlocking</strong>: Quickly unlock user accounts that have been locked due to failed login attempts.</li>
+<li><strong>User Search</strong>: Easily find specific users using the search functionality.</li>
+<li><strong>User Deletion</strong>: Remove individual or multiple users from your GALE account as needed.</li>
+</ul>
+<p><strong>Best Practices</strong></p>
+<ul>
+<li>Regularly review and update user roles.</li>
+<li>Use bulk import to add multiple users efficiently.</li>
+<li>Monitor the locked users and inactive invitations.</li>
+<li>Maintain accurate user information for effective account management.</li>
+</ul>
+<h2 id="users-dashboard">Users Dashboard<a class="headerlink" href="#users-dashboard" title="Permanent link">&para;</a></h2>
+<p>The dashboard displays user counts by status:</p>
+<ul>
+<li><strong>Active</strong>: Users with active accounts who can interact with other GALE users.</li>
+<li><strong>Inactive</strong>: Users invited by the admin but who have yet to join or accept the invitation.</li>
+<li><strong>Locked</strong>: Users who have exceeded 5 failed login attempts and their accounts have been locked.
+<a class="glightbox" href="../images/users-count.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/users-count.png" alt="users count" title="users count" style="border: 1px solid gray; zoom:75%;"></a></li>
+</ul>
+<p>It also shows detailed user information, including name, email, role, and status. For information on default system roles, click <a href="../role-management/#system-defined-roles" target="_blank">here</a>.</p>
+<h3 id="add-a-new-user">Add a New User<a class="headerlink" href="#add-a-new-user" title="Permanent link">&para;</a></h3>
+<p>The  <strong>Settings</strong> Console provides two ways to add a new user to the system:</p>
+<ul>
+<li>Email invitation</li>
+<li>Import <em>.txt</em> or <em>.csv</em> file with user information in the predefined format.</li>
+</ul>
+<h4 id="invite-email-invitation">Invite (Email Invitation)<a class="headerlink" href="#invite-email-invitation" title="Permanent link">&para;</a></h4>
+<p>Click <a href="../../../getting-started/sign-up-sign-in/#invite-a-user-to-your-account" target="_blank">here</a> to see the step-by-step instructions on how to add a user via email invitation.</p>
+<h4 id="resend-invite">Resend Invite<a class="headerlink" href="#resend-invite" title="Permanent link">&para;</a></h4>
+<p>Invitations expire after 15 days. You can send a new email invitation to the user. <a href="../../../getting-started/sign-up-sign-in/#resend-email-invitation" target="_blank">Learn more</a>.</p>
+<h4 id="import-bulk-import">Import (Bulk Import)<a class="headerlink" href="#import-bulk-import" title="Permanent link">&para;</a></h4>
+<p>The import feature allows administrators to add multiple users at once using .txt or .csv files. To ensure compatibility, download the sample CSV file, add your user details to this file, and upload the file.</p>
+<p><strong>Key Considerations</strong></p>
+<ul>
+<li>Valid file types are <em>.txt</em> or <em>.csv</em>. No other file types are allowed.</li>
+<li>The file must contain the required user information, such as name, email ID, and status, to create a user profile in your GALE account.</li>
+<li>Each row should contain information for ONE user.</li>
+<li>You can use accepted delimiters like Comma (","), Pipe ("|"), Semi-Colon (";"), and Tab in the file.</li>
+<li>The first row in the file should be the field name used to identify the user data.</li>
+<li>"*" indicates mandatory fields in the sample file. Please ensure mandatory fields are provided.</li>
+<li>The <strong>User Status</strong> indicates the user’s status after import, and the corresponding actions are taken for <em>New</em>, <em>Update</em>, and <em>Delete</em> statuses.</li>
+<li>Entries with invalid email formats, missing domain name, or wrong email IDs are ignored during import.</li>
+<li>Once an entry in the file is validated, an email request is sent out to the user to activate their account.</li>
+<li>If a user is already active (joined admin’s account), the email invitation is not sent.</li>
+</ul>
+<h5 id="import-user-data-file">Import User Data File<a class="headerlink" href="#import-user-data-file" title="Permanent link">&para;</a></h5>
+<p>The steps mentioned below, allow you to import users' data from a designated file into GALE.</p>
+<ol>
+<li>Navigate to <strong>Users Management</strong> &gt; <strong>Users</strong> on the left menu.</li>
+<li>
+<p>Click <strong>Add New User</strong>, and select <strong>Import</strong>.
+<a class="glightbox" href="../images/import-user.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-user.png" alt="import user" title="import user" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Perform one of the following actions on the <strong>Import Users</strong> page:</p>
+</li>
+<li>
+<p>Click <strong>Upload File</strong>, then select and upload the user info file from your system.
+<a class="glightbox" href="../images/click-upload-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-upload-file.png" alt="click upload file" title="click upload file" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Drag and drop the file from your system into the <strong>Upload File</strong> window.</p>
+</li>
+</ol>
+<p><strong>Key Suggestions</strong></p>
+<ul>
+<li>
+<p>Click and download the sample .<em>csv</em> file for reference.
+<a class="glightbox" href="../images/click-download-sample-file.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-download-sample-file.png" alt="download sample file" title="download sample file" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>The fields are predefined in the sample file, and the data requirements are shown below:
+<a class="glightbox" href="../images/prefefined-fields.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/prefefined-fields.png" alt="predefined fields" title="predefined fields" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Ensure the column names and field mandates match your uploaded file and the sample file. Any mismatch results in an error, as shown in the screenshot below.
+<a class="glightbox" href="../images/mismatch-error.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/mismatch-error.png" alt="fields mismatch error" title="fields mismatch error" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>A preview window displays the file’s data with a file uploaded success message. Click <strong>Continue</strong> to import the file.
+<a class="glightbox" href="../images/success-import.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/success-import.png" alt="click settings" title="click settings" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Continue</strong> once the import is complete, and the following message appears.
+<a class="glightbox" href="../images/import-completed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-completed.png" alt="import completed" title="import completed" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>The system validates the file for errors. If the user data contains errors, a window is displayed showing the import status and the reason for the errors.
+<a class="glightbox" href="../images/failed-import-entries.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/failed-import-entries.png" alt="failed import entries" title="failed import entries" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ul>
+<p>Correct the highlighted values based on the reason, and upload the file again. Then, follow <strong>Steps 4 and 5</strong> above.</p>
+<p>The file takes a few minutes to import. You can see the progress in the dialog window. When completed, the following message is displayed.</p>
+<p><a class="glightbox" href="../images/file-imported-successfully.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/file-imported-successfully.png" alt="file imported successfully" title="file imported successfully" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>Click <strong>OK</strong> to see the imported users on the dashboard. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The imported users are assigned the <b>Viewer</b> system role by default, which you can change. <a href="https://docs.kore.ai/gale/settings/user-management/role-management/#system-defined-roles" target="_blank">Learn more</a>.</p>
+</div>
 
+<p><a class="glightbox" href="../images/imported-entries.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/imported-entries.png" alt="imported entries" title="imported entries" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>You can see the success/failed import status on the dashboard as highlighted below:</p>
+<p><a class="glightbox" href="../images/success-failed-import-status.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/success-failed-import-status.png" alt="success and failed import status" title="success and failed import status" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><strong>Failed Import</strong> </p>
+<p>The following message is displayed if the user data in the uploaded file fails to import:</p>
+<p><a class="glightbox" href="../images/failed-import-message.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/failed-import-message.png" alt="failed import message" title="failed import message" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>You can identify which user data failed to import, review the actions completed by the user, and understand the reason for the failure. </p>
+<p>Once you know the cause, you can retry importing the corrected user data.</p>
+<p><strong>Cancel Import</strong></p>
+<p>The system cancels the import for data that fails due to validation errors, such as an incorrect email address. A window is displayed showing the import status and reason after the import is canceled.
+<a class="glightbox" href="../images/import-canceled.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-canceled.png" alt="import canceled" title="import canceled" style="border: 1px solid gray; zoom:75%;"></a></p>
+<h5 id="import-history">Import History<a class="headerlink" href="#import-history" title="Permanent link">&para;</a></h5>
+<p>Click <strong>Import History</strong> in the <strong>Import Users</strong> window to view and analyze the import history of users in your account.
+<a class="glightbox" href="../images/click-import-history.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-import-history.png" alt="click import history" title="click import history" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>The following window is displayed with the import date and time, the importing user, and the summary of successful and failed imports.
+<a class="glightbox" href="../images/import-history.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/import-history.png" alt="import history" title="import history" style="border: 1px solid gray; zoom:75%;"></a></p>
+<h3 id="delete-a-userbulk-delete">Delete a User/Bulk Delete<a class="headerlink" href="#delete-a-userbulk-delete" title="Permanent link">&para;</a></h3>
+<p>The <strong>Delete</strong> feature removes a user you’re managing from your GALE account.</p>
+<div class="admonition warning">
+<p class="admonition-title">Important</p>
+<p>Only users included as Admin in the system with the required permissions can access the <b>Settings</b> Console.</p>
+<p><ul><li>Deleting a user revokes their access and removes their data from your account. However, the user can still access their personal account on GALE. To rejoin your account, you must invite them again via email.</li>
+<li>You cannot delete users if they have created and manage agents in your account. The user must first remove all active agents before they can be deleted.</li></ul></p></div>
 
+<p><strong>Steps to delete a user</strong></p>
+<ol>
+<li>Click <strong>Users Management</strong> &gt; <strong>Users</strong> on the left menu to access the <strong>Users</strong> dashboard.</li>
+<li>Hover over the user entry you want to delete.</li>
+<li>Click the <strong>Delete</strong> icon.
+<a class="glightbox" href="../images/single-delete.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/single-delete.png" alt="single delete" title="single delete" style="border: 1px solid gray; zoom:75%;"></a></li>
+</ol>
+<p><strong>Updated Screen</strong></p>
+<p><a class="glightbox" href="../images/single-delete-result.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/single-delete-result.png" alt="single delete result" title="single delete result" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><strong>Bulk Delete</strong></p>
+<ol>
+<li>
+<p>Select the required users, and click the <strong>Delete</strong> icon at the bottom of the screen to delete multiple users in the list.
+<a class="glightbox" href="../images/click-delete-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-delete-icon.png" alt="click delete icon" title="click delete icon" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Remove</strong> in the <strong>Remove users</strong> window.
+<a class="glightbox" href="../images/click-remove.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-remove.png" alt="click remove" title="click remove" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+</ol>
+<p>When a user's account and role assignments are permanently deleted, the user is removed from the list, and the <strong>Total Users</strong> and <strong>Active Users</strong> counts on the dashboard are updated accordingly.</p>
+<p><strong>Updated Screen</strong></p>
+<p><a class="glightbox" href="../images/bulk-delete-result.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bulk-delete-result.png" alt="bulk delete result" title="bulk delete result" style="border: 1px solid gray; zoom:75%;"></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Using <b>Delete</b> removes the user permanently.</p>
+</div>
+
+<h3 id="search-user">Search User<a class="headerlink" href="#search-user" title="Permanent link">&para;</a></h3>
+<p>Use the search field to find users by name:</p>
+<ol>
+<li>Navigate to the <strong>Users</strong> dashboard.</li>
+<li>Click the <strong>Search</strong> text field.</li>
+<li>Enter the user’s <strong>name</strong> you want to search.</li>
+</ol>
+<p>All the matching results are displayed. </p>
+<p><a class="glightbox" href="../images/all-matching-results.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/all-matching-results.png" alt="matching results" title="matching results" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p>The following message is displayed if the user does not exist.
+<a class="glightbox" href="../images/user-does-not-exist.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/user-does-not-exist.png" alt="user does not exist" title="user does not exist" style="border: 1px solid gray; zoom:75%;"></a></p>
+<h3 id="unlock-a-locked-user">Unlock a Locked User<a class="headerlink" href="#unlock-a-locked-user" title="Permanent link">&para;</a></h3>
+<p>Locked users cannot access their accounts without unlocking them on the <strong>Settings</strong> console. </p>
+<p><strong>Steps to unlock a locked user</strong></p>
+<ol>
+<li>Navigate to <strong>Settings</strong> &gt; <strong>Users Management</strong> &gt; <strong>Users</strong> page.</li>
+<li>Hover over the user entry with the status highlighted as “<strong><em>Locked</em></strong>.” </li>
+<li>
+<p>Click the <strong>Unlock</strong> button.
+<a class="glightbox" href="../images/click-unlock.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/click-unlock.png" alt="click unlock" title="click unlock" style="border: 1px solid gray; zoom:75%;"></a></p>
+</li>
+<li>
+<p>Click <strong>Confirm</strong> in the confirmation dialog.</p>
+</li>
+</ol>
+<p>The user’s account is unlocked successfully, and the status changes to <em>Active</em>.</p>
+<h3 id="change-user-role">Change User Role<a class="headerlink" href="#change-user-role" title="Permanent link">&para;</a></h3>
+<p>On the <strong>Users</strong> dashboard, you can change the account-level role for one or more users. Only the role allowed for the user type (admin or account) can be assigned. </p>
+<p>Changing the user role automatically assigns the designated permissions and access levels defined in the system.</p>
+<p>To change a user’s role, follow the steps mentioned <a href="../role-management/#reassign-an-alternative-role-to-active-users" target="_blank">here</a>.</p>
+<h4 id="bulk-role-change">Bulk Role Change<a class="headerlink" href="#bulk-role-change" title="Permanent link">&para;</a></h4>
+<p>You can change and assign the same role to multiple users. However, to assign different roles, individual role changes must be made, as discussed in the previous section.</p>
+<p>To perform bulk role change, follow the steps below:</p>
+<ol>
+<li>Select the required users on the <strong>Users</strong> dashboard.</li>
+<li>Click the <strong>Role</strong> dropdown and select the required option in the bottom pane.
+<a class="glightbox" href="../images/select-for-role-change.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/select-for-role-change.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;"></a></li>
+</ol>
+<p>The role is updated for the selected users.
+<a class="glightbox" href="../images/bulk-role-changed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/bulk-role-changed.png" alt="select for role change" title="select for role change" style="border: 1px solid gray; zoom:75%;"></a></p>
+<p><a href="../role-management/" target="_blank">Learn more</a> about other Role Management features and capabilities to efficiently manage your account users.</p>
+<p>To know how to leverage other features on the <strong>Settings</strong> Console, click <a href="../../settings-overview/" target="_blank">here</a>.</p>
 
 
 
