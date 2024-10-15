@@ -94,6 +94,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#understanding-the-agent-monitor-interface" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -1420,6 +1425,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Understanding the Agent Monitor interface
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -1430,6 +1448,45 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#all-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      All runs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM calls
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -3077,6 +3134,34 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#all-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      All runs
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      LLM calls
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -3094,9 +3179,86 @@
   
 
 
-  <h1>Understanding the Agent Monitor interface</h1>
-
-
+<h1 id="understanding-the-agent-monitor-interface">Understanding the Agent Monitor interface<a class="headerlink" href="#understanding-the-agent-monitor-interface" title="Permanent link">&para;</a></h1>
+<p>The Agent Monitor page consists of two main tabs:</p>
+<ol>
+<li><strong>All runs</strong>: This tab displays comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. </li>
+<li><strong>LLM calls</strong>: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.</li>
+</ol>
+<p>Both tabs display summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.</p>
+<h2 id="all-runs">All runs<a class="headerlink" href="#all-runs" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="images/image1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="images/image1.png" title="image_tooltip" /></a></p>
+<p>The All runs tab provides the following information for each agent run:</p>
+<ul>
+<li><strong>Status</strong>: The status indicating a success or failure. A green icon indicates success, and a red icon indicates failure.</li>
+<li><strong>Run ID</strong>: The unique identifier for the flow.</li>
+<li><strong>Response time</strong>: The duration the agent takes to complete a request and provide an output.</li>
+<li><strong>Nodes executed</strong>: The total number of nodes executed in the run.</li>
+<li><strong>Start time</strong>: The time when the request is initiated. </li>
+<li><strong>End time</strong>: The time the response is received.</li>
+<li><strong>API key</strong>: The API key used to execute the agent. (This is the name provided in the <strong>API keys</strong> page when you created a new API key. If you did not provide a name, the system uses the default name ‘Secret Key’. You can have multiple API keys for a single agent.)</li>
+</ul>
+<p>You can also see the following metrics on the top of the page: </p>
+<ul>
+<li><strong>Total Runs</strong>: The total number of agent runs. </li>
+<li><strong>Response Time</strong>: The average response time of all the agent runs. It is measured by the following two metrics:<ul>
+<li><strong>P90</strong>: This metric represents the response time below which 90% of the requests fall.</li>
+<li><strong>P99</strong>: This metric represents the response time below which 99% of the requests fall.</li>
+</ul>
+</li>
+<li><strong>Failure Rate</strong>: The percentage of failed runs.</li>
+</ul>
+<p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. </p>
+<h2 id="llm-calls">LLM calls<a class="headerlink" href="#llm-calls" title="Permanent link">&para;</a></h2>
+<p>Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.</p>
+<div class="language-text highlight"><pre><span></span><code>**Note:** If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.
+</code></pre></div>
+<p><a class="glightbox" href="images/image2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="images/image2.png" title="image_tooltip" /></a></p>
+<p>The LLM calls tab provides the following information for each Gen AI node call:</p>
+<ul>
+<li><strong>Status</strong>: The status indicating a success or failure. A green icon indicates success and a red icon indicates failure.</li>
+<li><strong>Request ID</strong>: The unique identifier of the GenAI node request.</li>
+<li><strong>Node name</strong>: The name of the GenAI node.</li>
+<li><strong>Model name</strong>: The model that is used for the GenAI node.</li>
+<li><strong>Response time</strong>: The amount of time taken by the GenAI node to complete the request.</li>
+<li><strong>Start time</strong>: The time when the GenAI node has started its execution.</li>
+<li><strong>End time</strong>: The time when the GenAI node has completed its execution.</li>
+</ul>
+<p>You can also see the following metrics on the top of the page:</p>
+<ul>
+<li><strong>TOTAL REQUESTS</strong>: The total number of Gen AI node requests.</li>
+<li><strong>Response Time</strong>: The average response time of all the GenAI node requests. It is measured by the following two metrics:<ul>
+<li><strong>P90</strong>: This metric represents the response time below which 90% of the requests fall.</li>
+<li><strong>P99</strong>: This metric represents the response time below which 99% of the requests fall.</li>
+</ul>
+</li>
+<li><strong>FAILURE RATE</strong>: The percentage of instances in which the Gen AI node has failed in execution.</li>
+</ul>
+<p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.</p>
+<h1 id="viewing-detailed-run-information">Viewing detailed run information<a class="headerlink" href="#viewing-detailed-run-information" title="Permanent link">&para;</a></h1>
+<p>Clicking each row in either the All runs tab or the LLM calls tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas <a href="https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/">Learn more</a>.</p>
+<p><a class="glightbox" href="images/image3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="images/image3.png" title="image_tooltip" /></a></p>
+<p>The panel displays the following details:</p>
+<ol>
+<li><strong>Run ID/Request ID</strong>: The unique identifier for the flow.</li>
+<li><strong>Response Time</strong>: The duration the agent takes to complete a request and provide an output.</li>
+<li><strong>Debug icon</strong>: Clicking this icon displays the debug log details.</li>
+<li><strong>Input</strong>: The Input section displays the input sent to the agent.</li>
+<li>
+<p><strong>Flow log</strong>: The flow log section displays the information of each node.</p>
+<ul>
+<li><strong>Success</strong>: Displays the log as in the debug panel.</li>
+<li>
+<p><strong>Failure</strong>: Displays failure details as in the debug panel.</p>
+<p>For GenAI nodes, when you expand the node you can see the information related to each node along with the scanner information.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Output section</strong>: The Output section displays the agent's output (for successful runs). You can copy the output and view tokens.</p>
+</li>
+</ol>
+<p><a class="glightbox" href="images/image4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="alt_text" src="images/image4.png" title="image_tooltip" /></a></p>
 
 
 
