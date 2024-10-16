@@ -3179,7 +3179,7 @@
   
 
 
-<h1 id="understanding-the-agent-monitor-interface">Understanding the Agent Monitor interface<a class="headerlink" href="#understanding-the-agent-monitor-interface" title="Permanent link">&para;</a></h1>
+<h1 id="understanding-the-agent-monitor-interface">Understanding the Agent Monitor Interface<a class="headerlink" href="#understanding-the-agent-monitor-interface" title="Permanent link">&para;</a></h1>
 <p>The Agent Monitor page consists of two main tabs:</p>
 <ol>
 <li><strong>All runs</strong>: This tab displays comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. </li>
@@ -3200,19 +3200,18 @@
 </ul>
 <p>You can also see the following metrics on the top of the page: </p>
 <ul>
-<li><strong>Total Runs</strong>: The total number of agent runs. </li>
-<li><strong>Response Time</strong>: The average response time of all the agent runs. It is measured by the following two metrics:<ul>
+<li><strong>TOTAL RUNS</strong>: The total number of agent runs. </li>
+<li><strong>RESPONSE TIME</strong>: The average response time of all the agent runs. It is measured by the following two metrics:<ul>
 <li><strong>P90</strong>: This metric represents the response time below which 90% of the requests fall.</li>
 <li><strong>P99</strong>: This metric represents the response time below which 99% of the requests fall.</li>
 </ul>
 </li>
-<li><strong>Failure Rate</strong>: The percentage of failed runs.</li>
+<li><strong>FAILURE RATE</strong>: The percentage of failed runs.</li>
 </ul>
 <p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. </p>
 <h2 id="llm-calls">LLM calls<a class="headerlink" href="#llm-calls" title="Permanent link">&para;</a></h2>
 <p>Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.</p>
-<div class="language-text highlight"><pre><span></span><code>**Note:** If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.
-</code></pre></div>
+<p>If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.</p>
 <p><a class="glightbox" href="..images/agent_monitor_llm_calls.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="..images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The LLM calls tab provides the following information for each Gen AI node call:</p>
 <ul>
@@ -3227,7 +3226,7 @@
 <p>You can also see the following metrics on the top of the page:</p>
 <ul>
 <li><strong>TOTAL REQUESTS</strong>: The total number of Gen AI node requests.</li>
-<li><strong>Response Time</strong>: The average response time of all the GenAI node requests. It is measured by the following two metrics:<ul>
+<li><strong>RESPONSE TIME</strong>: The average response time of all the GenAI node requests. It is measured by the following two metrics:<ul>
 <li><strong>P90</strong>: This metric represents the response time below which 90% of the requests fall.</li>
 <li><strong>P99</strong>: This metric represents the response time below which 99% of the requests fall.</li>
 </ul>
