@@ -1469,7 +1469,7 @@
         <li class="md-nav__item">
   <a href="#all-runs" class="md-nav__link">
     <span class="md-ellipsis">
-      All runs
+      All Runs
     </span>
   </a>
   
@@ -1478,9 +1478,60 @@
         <li class="md-nav__item">
   <a href="#llm-calls" class="md-nav__link">
     <span class="md-ellipsis">
-      LLM calls
+      LLM Calls
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-detailed-run-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Detailed Run Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching-and-filtering-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Searching and Filtering Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Searching and Filtering Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-based-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-based Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Filters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3104,7 +3155,7 @@
         <li class="md-nav__item">
   <a href="#all-runs" class="md-nav__link">
     <span class="md-ellipsis">
-      All runs
+      All Runs
     </span>
   </a>
   
@@ -3113,9 +3164,60 @@
         <li class="md-nav__item">
   <a href="#llm-calls" class="md-nav__link">
     <span class="md-ellipsis">
-      LLM calls
+      LLM Calls
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-detailed-run-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Viewing Detailed Run Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching-and-filtering-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Searching and Filtering Information
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Searching and Filtering Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#manual-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manual Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#time-based-search" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time-based Search
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Filters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3144,8 +3246,8 @@
 <li><strong>LLM calls</strong>: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.</li>
 </ol>
 <p>Both tabs display summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.</p>
-<h2 id="all-runs">All runs<a class="headerlink" href="#all-runs" title="Permanent link">&para;</a></h2>
-<p><a class="glightbox" href="../images/agent_monitor_allruns.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_allruns.png" alt="Agent monitor All runs" title="Agent monitor All runs" style="border: 1px solid gray; zoom:80%;"></a></p>
+<h2 id="all-runs">All Runs<a class="headerlink" href="#all-runs" title="Permanent link">&para;</a></h2>
+<p><a class="glightbox" href="../images/agent_monitor_allruns.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_allruns.png" alt="All runs" title="All runs tab" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The All runs tab provides the following information for each agent run:</p>
 <ul>
 <li><strong>Status</strong>: The status indicating a success or failure. A green icon indicates success, and a red icon indicates failure.</li>
@@ -3167,10 +3269,10 @@
 <li><strong>FAILURE RATE</strong>: The percentage of failed runs.</li>
 </ul>
 <p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. </p>
-<h2 id="llm-calls">LLM calls<a class="headerlink" href="#llm-calls" title="Permanent link">&para;</a></h2>
+<h2 id="llm-calls">LLM Calls<a class="headerlink" href="#llm-calls" title="Permanent link">&para;</a></h2>
 <p>Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.</p>
 <p>If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.</p>
-<p><a class="glightbox" href="..images/agent_monitor_llm_calls.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="..images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/agent_monitor_llm_calls.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls tab" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The LLM calls tab provides the following information for each Gen AI node call:</p>
 <ul>
 <li><strong>Status</strong>: The status indicating a success or failure. A green icon indicates success and a red icon indicates failure.</li>
@@ -3192,11 +3294,11 @@
 <li><strong>FAILURE RATE</strong>: The percentage of instances in which the Gen AI node has failed in execution.</li>
 </ul>
 <p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.</p>
-<h1 id="viewing-detailed-run-information">Viewing detailed run information<a class="headerlink" href="#viewing-detailed-run-information" title="Permanent link">&para;</a></h1>
+<h2 id="viewing-detailed-run-information">Viewing Detailed Run Information<a class="headerlink" href="#viewing-detailed-run-information" title="Permanent link">&para;</a></h2>
 <p>Clicking each row in either the All runs tab or the LLM calls tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas <a href="https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/">Learn more</a>.</p>
 <p><a class="glightbox" href="../images/agent_monitor_viewing_run_information.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The panel displays the following details:</p>
-<ol>
+<ul>
 <li><strong>Run ID/Request ID</strong>: The unique identifier for the flow.</li>
 <li><strong>Response Time</strong>: The duration the agent takes to complete a request and provide an output.</li>
 <li><strong>Debug icon</strong>: Clicking this icon displays the debug log details.</li>
@@ -3215,7 +3317,7 @@
 <p><strong>Output section</strong>: The Output section displays the agent's output (for successful runs). You can copy the output and view tokens.</p>
 <p><a class="glightbox" href="../images/agent_monitor_viewing_run_information_detailed.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_viewing_run_information_detailed.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
-</ol>
+</ul>
 <h2 id="searching-and-filtering-information">Searching and Filtering Information<a class="headerlink" href="#searching-and-filtering-information" title="Permanent link">&para;</a></h2>
 <h3 id="manual-search">Manual Search<a class="headerlink" href="#manual-search" title="Permanent link">&para;</a></h3>
 <p>Use the search box in the top right corner of the Agent monitor page to find specific runs or calls based on keywords.</p>
@@ -3229,7 +3331,7 @@
 </li>
 <li>
 <p>Select a predefined time range or set custom dates.</p>
-<p><a class="glightbox" href="../images/agent_monitor_calendar.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_calendar.png" alt="calendar" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/agent_monitor_calendar.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_calendar.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Click <strong>Apply</strong> to update the results.</p>
@@ -3243,14 +3345,14 @@
 <li>Click the Filter icon.</li>
 <li>
 <p>Click + Add Filter.</p>
-<p><a class="glightbox" href="../agent-monitor/images/agent_monitor_filtericon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../agent-monitor/images/agent_monitor_filtericon.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/agent_monitor_filtericon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_filtericon.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
 <p>Select options for Column, Operator, and Value.</p>
-<p><a class="glightbox" href="../agent-monitor/images/agent_monitor_filter_options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../agent-monitor/images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;"></a></p>
+<p><a class="glightbox" href="../images/agent_monitor_filter_options.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_filter_options.png" alt="Filter options" title="Filter options" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
-<p>Click <strong>Apply</strong>.    </p>
+<p>Click <strong>Apply</strong>.</p>
 </li>
 </ol>
 
