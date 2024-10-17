@@ -230,7 +230,7 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 <ul><li>A blue line graph represents the node executions for the selected period. If a single day is selected, the graph displays hourly node executions, while selecting a date range represents daily node executions.</li>
 <li>The <b>Number of Nodes Executed</b> (Y-axis) is fixed and accommodates the maximum rate limit subscription.</li>
 <li>A red line highlights the maximum rate limit.</li>
-<li>Hover over the required data point on the graph to view the following information:</li>
+<li>Hover over the required data point on the graph to view the following information:</li></ul>
 <ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li>
 <ul><li>Start Node</li>
 <li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/gen-ai-node/" target="_blank">GenAI Node</a></li>
