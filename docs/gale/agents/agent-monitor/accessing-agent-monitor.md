@@ -15,7 +15,7 @@ Steps to access the Agent monitor page:
 
 5. Click one of the following tabs to see the data for the deployed agents:
     * **All runs**
-    * **LLM calls**
+    * **Model runs**
 
     For more information, see [Understanding the Agent Monitor interface](../agent-monitor/understanding-the-agent-monitor-interface.md).
 
