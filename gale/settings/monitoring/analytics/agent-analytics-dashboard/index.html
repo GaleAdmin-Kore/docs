@@ -3200,24 +3200,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#expanded-widget-view" class="md-nav__link">
-    <span class="md-ellipsis">
-      Expanded Widget View
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Links
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3398,24 +3380,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#expanded-widget-view" class="md-nav__link">
-    <span class="md-ellipsis">
-      Expanded Widget View
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Related Links
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -3489,8 +3453,10 @@
 </li>
 <li>
 <p><strong>Number of runs</strong>: The total count of success and failure agent flow runs or node executions completed by all deployed agents in your account during the specified period. </p>
-<p>For detailed statistics on each status for the selected date/date range, see the <strong>Agent Runs</strong> widget. <a href="./#agent-runs" target="_blank">Learn more</a>.
-* <strong>Number of times nodes are executed</strong>: The event-driven execution counts for different node types during an agent run. </p>
+<p>For detailed statistics on each status for the selected date/date range, see the <strong>Agent Runs</strong> widget. <a href="./#agent-runs" target="_blank">Learn more</a>.</p>
+</li>
+<li>
+<p><strong>Number of times nodes are executed</strong>: The event-driven execution counts for different node types during an agent run. </p>
 <p>For detailed statistics on the total events and the runs executed by each node, see the <strong>Nodes Execution</strong> widget. <a href="./#nodes-execution" target="_blank">Learn more</a>.</p>
 </li>
 </ul>
@@ -3519,7 +3485,7 @@
 <a class="glightbox" href="../images/global-timeline-filters.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/global-timeline-filters.png" alt="global timeline filters" title="global timeline filters" style="border: 1px solid gray; zoom:75%;"></a></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">Important Considerations</p>
+<p class="admonition-title">Key Considerations</p>
 <p><ul><li>You can select only the current and past dates and not a future date.</li>
 <li>You can view past data only up to one year from the current date.</li></ul></p></div>
 
@@ -3610,9 +3576,9 @@
 <p><strong>Single Day</strong></p>
 <ul>
 <li>View the average agent response time for each hourly request within a day. For instance, if the agent executes 100 requests between 12 PM and 1 PM, each with its own response time, the average of these values is represented by the graph line.  Hover over the corresponding data point on the graph to view the ART for a specific hour. The tooltip shows the selected date &amp; time, ART for the hour, and the no.of requests processed during that hour.</li>
-<li>View the overall ART, which is the total of the ART for all hours combined during the selected day.
-<a class="glightbox" href="../images/overall-art.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/overall-art.png" alt="overall art" title="overall art" style="border: 1px solid gray; zoom:75%;"></a></li>
+<li>View the overall ART, which is the total of the ART for all hours combined during the selected day.</li>
 </ul>
+<p><a class="glightbox" href="../images/overall-art.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/overall-art.png" alt="overall art" title="overall art" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p><strong>Date Range</strong></p>
 <ul>
 <li>
@@ -3641,56 +3607,65 @@
 <p>The <strong>Nodes Execution</strong> widget displays a graph up to your account's maximum subscribed rate limit, indicated by a red line. For example, if your subscription allows 8,000 node executions, the graph will show data for a maximum of 8,000 nodes during the selected period. Once this limit is reached, an error message will appear, notifying you that the threshold has been reached and no further node executions can occur.</p>
 <p><a class="glightbox" href="../images/nodes-execution-rate-limit.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/nodes-execution-rate-limit.png" alt="rate limit" title="rate limit" style="border: 1px solid gray; zoom:75%;"></a></p>
 <p><strong>Key Features</strong></p>
-<ul>
-<li>A blue line graph represents the node executions for the selected period. If a single day is selected, the graph displays hourly node executions, while selecting a date range represents daily node executions.</li>
-<li>The <strong>Number of Nodes Executed</strong> (Y-axis) is fixed and accommodates the maximum rate limit subscription.</li>
+<ul><li>A blue line graph represents the node executions for the selected period. If a single day is selected, the graph displays hourly node executions, while selecting a date range represents daily node executions.</li>
+<li>The <b>Number of Nodes Executed</b> (Y-axis) is fixed and accommodates the maximum rate limit subscription.</li>
 <li>A red line highlights the maximum rate limit.</li>
 <li>Hover over the required data point on the graph to view the following information:</li>
-<li><strong>Total Events</strong>: 
-The number of node executions for the following nodes:</li>
-<li>Start Node</li>
-<li><a href="../../../../agents/agents-flows/types-of-nodes/gen-ai-node/" target="_blank">GenAI Node</a></li>
-<li><a href="../../../../agents/agents-flows/types-of-nodes/function-node/" target="_blank">Function Node</a></li>
-<li><a href="../../../../agents/agents-flows/types-of-nodes/condition-node/" target="_blank">Condition Node</a></li>
-<li><a href="../../../../agents/agents-flows/types-of-nodes/api-node/" target="_blank">API Node</a></li>
-<li><a href="../../../../agents/agents-flows/types-of-nodes/end-node/" target="_blank">End Node</a></li>
-</ul>
-<p><strong>Best Practices</strong></p>
-<ul>
-<li><strong>Performance Monitoring</strong>: Track the number of nodes executed during each agent flow, allowing you to assess the agent's overall performance.</li>
-<li><strong>Resource Optimization</strong>: Visualizing node execution trends can help you identify inefficient workflows or overused nodes, optimize resources, and enhance efficiency.</li>
-<li><strong>Rate Limit Tracking</strong>: The analysis allows you to monitor node execution in relation to your account’s rate limits, helping you stay within subscription thresholds.</li>
-<li><strong>Troubleshooting</strong>: Nodes execution patterns can highlight potential issues or bottlenecks in your agent flows, making it easier to detect and resolve problems.</li>
-<li><strong>Trend Analysis</strong>: By comparing node executions over time, you can identify performance trends and make data-driven decisions to improve agent flow and response times.</li>
-</ul>
-<h2 id="expanded-widget-view">Expanded Widget View<a class="headerlink" href="#expanded-widget-view" title="Permanent link">&para;</a></h2>
-<p>You can expand any widget on the <strong>Agents Analytics Dashboard</strong> for a drill down view of analytics trends. Each expanded view enables you to apply widget-level filters, offering a focused analysis of agent performance for that widget.</p>
-<p>The widget-level filters include the following:</p>
-<ul>
-<li><a href="./#global-timeline-filters" target="_blank">Global timeline filter</a></li>
-<li><a href="./#agent-performance-filters" target="_blank">Agent Performance Filters</a></li>
-</ul>
+<ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li>
+<ul><li>Start Node</li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/gen-ai-node/" target="_blank">GenAI Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/function-node/" target="_blank">Function Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/condition-node/" target="_blank">Condition Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/" target="_blank">API Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/end-node/" target="_blank">End Node</a></li></ul></ul>
+
+<p><b>Best Practices</b></p>
+
+* **Performance Monitoring**: Track the number of nodes executed during each agent flow, allowing you to assess the agent's overall performance.
+* **Resource Optimization**: Visualizing node execution trends can help you identify inefficient workflows or overused nodes, optimize resources, and enhance efficiency.
+* **Rate Limit Tracking**: The analysis allows you to monitor node execution in relation to your account’s rate limits, helping you stay within subscription thresholds.
+* **Troubleshooting**: Nodes execution patterns can highlight potential issues or bottlenecks in your agent flows, making it easier to detect and resolve problems.
+* **Trend Analysis**: By comparing node executions over time, you can identify performance trends and make data-driven decisions to improve agent flow and response times.
+
+## Expanded Widget View
+
+You can expand any widget on the **Agents Analytics Dashboard** for a drill down view of analytics trends. Each expanded view enables you to apply widget-level filters, offering a focused analysis of agent performance for that widget.
+
+The widget-level filters include the following:
+
+* [Global timeline filter](../analytics/agent-analytics-dashboard.md/#global-timeline-filters){:target="_blank"}
+* [Agent Performance Filters](../analytics/agent-analytics-dashboard.md/#agent-performance-filters){:target="_blank"}
+
 <div class="admonition warning">
 <p class="admonition-title">Important</p>
 <p><ul><li>Changes made to the filters in the expanded view of a widget do not affect the main dashboard or the global filters.</li>
 <li>Hover over the required data point to view widget analytics data.</li></ul></p></div>
 
-<p>To expand a widget, hover over the top-right corner of the widget, and click the <strong>Double-arrow</strong> icon.</p>
-<p><a class="glightbox" href="../images/expand-widget-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/expand-widget-icon.png" alt="expand widget" title="expand widget" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>The expanded views of all the widgets are shown below:</p>
-<p><strong>Agent Runs</strong></p>
-<p><a class="glightbox" href="../images/agent-runs-expanded-view.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent-runs-expanded-view.png" alt="agent runs expanded view" title="agent runs expanded view" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p><strong>Avg. Agent Response Time</strong></p>
-<p><a class="glightbox" href="../images/avg-art-expanded-view.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/avg-art-expanded-view.png" alt="average art expanded view" title="average art expanded view" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p><strong>Nodes Execution</strong></p>
-<p><a class="glightbox" href="../images/nodes-execution-expanded-view.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/nodes-execution-expanded-view.png" alt="nodes execution expanded view" title="nodes execution expanded view" style="border: 1px solid gray; zoom:75%;"></a></p>
-<p>The <strong>Agents Analysis Dashboard</strong> offers custom and actionable insights through the various features highlighted in this post to streamline agents’ performance in your account. </p>
-<h2 id="related-links">Related Links<a class="headerlink" href="#related-links" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../../../settings-overview/" target="_blank">Settings Console</a>- Learn more about other GALE admin features.</li>
-<li><a href="../../audit-logs/" target="_blank">Monitoring: Audit Logs</a>- Track activities and events in your account.</li>
-<li><a href="../model-analytics-dashboard/" target="_blank">Monitoring: Model Analytics Dashboard</a>- Gain actionable insights into model performance.</li>
-</ul>
+To expand a widget, hover over the top-right corner of the widget, and click the **Double-arrow** icon.
+
+<a class="glightbox" href="../images/expand-widget-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/expand-widget-icon.png" alt="expand widget" title="expand widget" style="border: 1px solid gray; zoom:75%;"></a>
+
+The expanded views of all the widgets are shown below:
+
+**Agent Runs**
+
+<a class="glightbox" href="../images/agent-runs-expanded-view.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent-runs-expanded-view.png" alt="agent runs expanded view" title="agent runs expanded view" style="border: 1px solid gray; zoom:75%;"></a>
+
+**Avg. Agent Response Time**
+
+<a class="glightbox" href="../images/avg-art-expanded-view.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/avg-art-expanded-view.png" alt="average art expanded view" title="average art expanded view" style="border: 1px solid gray; zoom:75%;"></a>
+
+**Nodes Execution**
+
+<a class="glightbox" href="../images/nodes-execution-expanded-view.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/nodes-execution-expanded-view.png" alt="nodes execution expanded view" title="nodes execution expanded view" style="border: 1px solid gray; zoom:75%;"></a>
+
+The **Agents Analysis Dashboard** offers custom and actionable insights through the various features highlighted in this post to streamline agents’ performance in your account. 
+
+## Related Links
+
+* [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other GALE admin features.
+* [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
+* [Monitoring: Model Analytics Dashboard](../analytics/model-analytics-dashboard.md){:target="_blank"}- Gain actionable insights into model performance.
 
 
 
