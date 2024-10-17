@@ -57,6 +57,7 @@ The following metrics summarize the counts for agents, runs, and node executions
 * **Number of runs**: The total count of success and failure agent flow runs or node executions completed by all deployed agents in your account during the specified period. 
 
     For detailed statistics on each status for the selected date/date range, see the **Agent Runs** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#agent-runs){:target="_blank"}.
+
 * **Number of times nodes are executed**: The event-driven execution counts for different node types during an agent run. 
 
     For detailed statistics on the total events and the runs executed by each node, see the **Nodes Execution** widget. [Learn more](../analytics/agent-analytics-dashboard.md/#nodes-execution){:target="_blank"}.
@@ -91,7 +92,7 @@ To generate account-level and agent-level data for a specific period, use the fo
 <img src="../images/global-timeline-filters.png" alt="global timeline filters" title="global timeline filters" style="border: 1px solid gray; zoom:75%;">
 
 <div class="admonition note">
-<p class="admonition-title">Important Considerations</p>
+<p class="admonition-title">Key Considerations</p>
 <p><ul><li>You can select only the current and past dates and not a future date.</li>
 <li>You can view past data only up to one year from the current date.</li></ul></p></div>
 
@@ -192,6 +193,7 @@ You can do the following to analyze agent performance:
 
 * View the average agent response time for each hourly request within a day. For instance, if the agent executes 100 requests between 12 PM and 1 PM, each with its own response time, the average of these values is represented by the graph line.  Hover over the corresponding data point on the graph to view the ART for a specific hour. The tooltip shows the selected date & time, ART for the hour, and the no.of requests processed during that hour.
 * View the overall ART, which is the total of the ART for all hours combined during the selected day.
+
 <img src="../images/overall-art.png" alt="overall art" title="overall art" style="border: 1px solid gray; zoom:75%;">
 
 **Date Range**
@@ -225,20 +227,19 @@ The **Nodes Execution** widget displays a graph up to your account's maximum sub
 
 **Key Features**
 
-* A blue line graph represents the node executions for the selected period. If a single day is selected, the graph displays hourly node executions, while selecting a date range represents daily node executions.
-* The **Number of Nodes Executed** (Y-axis) is fixed and accommodates the maximum rate limit subscription.
-* A red line highlights the maximum rate limit.
-* Hover over the required data point on the graph to view the following information:
-* **Total Events**: 
-The number of node executions for the following nodes:
-  * Start Node
-  * [GenAI Node](../../../agents/agents-flows/types-of-nodes/gen-ai-node.md){:target="_blank"}
-  * [Function Node](../../../agents/agents-flows/types-of-nodes/function-node.md){:target="_blank"}
-  * [Condition Node](../../../agents/agents-flows/types-of-nodes/condition-node.md){:target="_blank"}
-  * [API Node](../../../agents/agents-flows/types-of-nodes/api-node.md){:target="_blank"}
-  * [End Node](../../../agents/agents-flows/types-of-nodes/end-node.md){:target="_blank"}
+<ul><li>A blue line graph represents the node executions for the selected period. If a single day is selected, the graph displays hourly node executions, while selecting a date range represents daily node executions.</li>
+<li>The <b>Number of Nodes Executed</b> (Y-axis) is fixed and accommodates the maximum rate limit subscription.</li>
+<li>A red line highlights the maximum rate limit.</li>
+<li>Hover over the required data point on the graph to view the following information:</li>
+<ul><li><b>Total Events</b>: The number of node executions for the following nodes:</li>
+<ul><li>Start Node</li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/gen-ai-node/" target="_blank">GenAI Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/function-node/" target="_blank">Function Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/condition-node/" target="_blank">Condition Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/api-node/" target="_blank">API Node</a></li>
+<li><a href="https://docs.kore.ai/gale/agents/agents-flows/types-of-nodes/end-node/" target="_blank">End Node</a></li></ul></ul>
 
-**Best Practices**
+<p><b>Best Practices</b></p>
 
 * **Performance Monitoring**: Track the number of nodes executed during each agent flow, allowing you to assess the agent's overall performance.
 * **Resource Optimization**: Visualizing node execution trends can help you identify inefficient workflows or overused nodes, optimize resources, and enhance efficiency.
