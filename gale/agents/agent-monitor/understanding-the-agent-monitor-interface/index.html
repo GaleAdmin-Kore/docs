@@ -3315,8 +3315,9 @@
 <p><strong>All runs</strong>: It shows comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. </p>
 </li>
 <li>
-<p><strong>LLM calls</strong>: It shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.</p>
+<p><strong>All runs</strong>: This tab displays comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. </p>
 </li>
+<li><strong>LLM calls</strong>: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.</li>
 </ul>
 <p>Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.</p>
 <h2 id="all-runs">All Runs<a class="headerlink" href="#all-runs" title="Permanent link">&para;</a></h2>
@@ -3343,10 +3344,10 @@
 </ul>
 <p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. </p>
 <h2 id="llm-calls">LLM Calls<a class="headerlink" href="#llm-calls" title="Permanent link">&para;</a></h2>
-<p>Each GenAI node in the agent is recorded as a separate request in the LLM calls tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.</p>
-<p>If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the LLM Calls will begin to reflect here.</p>
+<p>Each GenAI node in the agent is recorded as a separate request in the Model runs tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.</p>
+<p>If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.</p>
 <p><a class="glightbox" href="../images/agent_monitor_llm_calls.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls tab" style="border: 1px solid gray; zoom:80%;"></a></p>
-<p>The LLM calls tab provides the following information for each Gen AI node call:</p>
+<p>The Model runs tab provides the following information for each Gen AI node call:</p>
 <ul>
 <li><strong>Status</strong>: The status indicating a success or failure. A green icon indicates success and a red icon indicates failure.</li>
 <li><strong>Request ID</strong>: The unique identifier of the GenAI node request.</li>
@@ -3368,7 +3369,7 @@
 </ul>
 <p>These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply.</p>
 <h2 id="viewing-detailed-run-information">Viewing Detailed Run Information<a class="headerlink" href="#viewing-detailed-run-information" title="Permanent link">&para;</a></h2>
-<p>Clicking each row in either the All runs tab or the LLM calls tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas <a href="https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/">Learn more</a>.</p>
+<p>Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas <a href="https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/">Learn more</a>.</p>
 <p><a class="glightbox" href="../images/agent_monitor_viewing_run_information.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;"></a></p>
 <p>The panel displays the following details:</p>
 <ul>
@@ -3417,7 +3418,7 @@
 <ol>
 <li>Click the Filter icon.</li>
 <li>
-<p>Click + Add Filter.</p>
+<p>Click <strong>+ Add filter</strong>.</p>
 <p><a class="glightbox" href="../images/agent_monitor_filtericon_new.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../images/agent_monitor_filtericon_new.png" alt="Filter" title="Filter" style="border: 1px solid gray; zoom:80%;"></a></p>
 </li>
 <li>
