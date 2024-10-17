@@ -8,6 +8,7 @@ GALE’s **Settings** console is a centralized management interface that provide
 4. [Easy Integration](../models/external-models/add-an-external-model-using-easy-integration.md){:target="_blank"} and [API Integration](../models/external-models/add-an-external-model-using-api-integration.md){:target="_blank"}
 5. [Manage Guardrails](../agents/guardrails/manage-guardrails.md){:target="_blank"} 
 6. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Audit Logs](./monitoring/audit-logs.md){:target="_blank"}
+7. [Monitoring](../settings/monitoring/overview.md){:target="_blank"}: [Agent Analytics Dashboard](./monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}
 
 ## Levels of Users Management 
 
@@ -77,7 +78,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 **Monitoring**
 
 - Track the audit logs of user actions within your account to gain insights into their activities. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
-- Review agent performance metrics and take informed decisions on the **Agent Analytics** dashboard.
+- Review agent performance metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
 
 ## Access Settings Console
 
@@ -178,6 +179,16 @@ The following modules and features are supported on the **Settings** Console:
    <td><ul><li>Select the date range and view periodic, event-based logs related to <b>Login/Log out</b> or <b>Roles</b> categories.</li>
    <li>Set one or more levels of custom filters to view only specific audit logs.</li>
    <li>Search for the required audit log from the listed entries.</li></ul></td>
+  </tr>
+    <tr>
+   <td><b>Monitoring - Agent Analytics Dashboard</b></td>
+   <td>Get actionable insights into successful and failed agent runs, average agent response time, and drill down into nodes execution data for the selected period to enable informed decisions.</td>
+   <td><ul><li>Select a single date or date range to view periodic agent performance metrics.</li>
+   <li>Make performance comparison between different agent versions.</li>
+   <li>Keep track of failed execution runs and investigate the reason for the same.</li>
+   <li>Monitor the average response times of agents for various requests.</li>
+   <li>Monitor node executions across different types and ensure agent flow runs stay within your account's rate limits.</li>
+   <li>Optimize agent performance with real-time metrics.</li></ul></td>
   </tr>
 </table>
 
