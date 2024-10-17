@@ -281,7 +281,7 @@ The expanded views of all the widgets are shown below:
 
 The **Agents Analysis Dashboard** offers custom and actionable insights through the various features highlighted in this post to streamline agents’ performance in your account. 
 
-## Related Links
+## Related Information
 
 * [Settings Console](../../settings-overview.md){:target="_blank"}- Learn more about other GALE admin features.
 * [Monitoring: Audit Logs](../audit-logs.md){:target="_blank"}- Track activities and events in your account.
