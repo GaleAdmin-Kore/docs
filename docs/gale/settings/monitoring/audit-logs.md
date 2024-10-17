@@ -698,3 +698,4 @@ By default, the current day will be set as the end date. This feature allows you
 * [Settings Console](../settings-overview.md){:target="_blank"}- Learn more about other GALE admin features.
 * [Users Management](../user-management/overview.md){:target="_blank"}- Manage users linked to your account.
 * [Role Management](../user-management/role-management.md){:target="_blank"}- View and manage system and custom roles for your account.
+
