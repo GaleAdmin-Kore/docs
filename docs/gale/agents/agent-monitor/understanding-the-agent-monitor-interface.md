@@ -4,8 +4,7 @@ The Agent Monitor capabilities are shown on the following tabs:
 
 * **All runs**: It shows comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
 
-1. **All runs**: This tab displays comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
-2. **LLM calls**: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
+* **Model runs**: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
@@ -33,13 +32,13 @@ You can also see the following metrics on the top of the page:
 
 These metrics are dependent on the selected date range, filters, and search criteria. When you apply a search, the metrics on the top of the page will be updated to reflect the specific request. Essentially, the displayed top metrics will vary based on the filters you apply. 
 
-## 	LLM Calls
+## 	Model Runs
 
 Each GenAI node in the agent is recorded as a separate request in the Model runs tab of the Agent monitor page. For example, if three GenAI nodes are used in an agent, three separate requests for each of the three GenAI nodes are displayed.
 
 If your agent currently does not have any Gen AI nodes, this section will remain empty. Once you add Gen AI nodes, the Model runs will begin to reflect here.
 
-<img src="../images/agent_monitor_llm_calls.png" alt="LLM calls" title="LLM calls tab" style="border: 1px solid gray; zoom:80%;">
+<img src="../images/agent_monitor_model_runs.png" alt="Model runs" title="Model runs tab" style="border: 1px solid gray; zoom:80%;">
 
 The Model runs tab provides the following information for each Gen AI node call:
 
@@ -102,7 +101,7 @@ Steps to use the time-based search:
 
 2. Select a predefined time range or set custom dates.
 
-    <img src="../images/agent_monitor_calendar_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
+    <img src="../images/agent_monitor_calendar_selection_new.png" alt="calendar custom dates" title="Calendar custom dates" style="border: 1px solid gray; zoom:80%;">
 
 3. Click **Apply** to update the results.
 
