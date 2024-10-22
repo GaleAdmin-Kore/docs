@@ -77,7 +77,7 @@ Deploy and undeploy guardrail models to apply scanners to prompt input and outpu
 
 **Monitoring**
 
-- Track the audit logs of user actions within your account to gain insights into their activities. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
+- Track the audit logs of all user activities within your account and quickly troubleshoot issues with real-time event tracking. [Learn more](../settings/monitoring/audit-logs.md){:target="_blank"}.
 - Review agent performance metrics and take informed decisions on the **Agent Analytics** dashboard. [Learn more](../settings/monitoring/analytics/agent-analytics-dashboard.md){:target="_blank"}.
 
 ## Access Settings Console
@@ -175,14 +175,23 @@ The following modules and features are supported on the **Settings** Console:
   </tr>
   <tr>
    <td><b>Monitoring - Audit Logs</b></td>
-   <td>View the log of all the changes made across the account by the linked users for log in and log out activities, and role management changes made by you for the specified time range.</td>
-   <td><ul><li>Select the date range and view periodic, event-based logs related to <b>Login/Log out</b> or <b>Roles</b> categories.</li>
+   <td>Gain complete visibility into all account activities and efficiently troubleshoot issues by tracking real-time account and agent-level event logs.</td>
+   <td><ul><li>Select the date range and view periodic, event-based logs related to the following categories:</li>
+   <ul><li>Login/Logout</li>
+   <li>Roles</li>
+   <li>Integrations</li>
+   <li>Models</li>
+   <li>Agents</li>
+   <li>Users Management</li>
+   <li>Prompts</li>
+   <li>Dataset</li>
+   <li>Guardrails</li></ul>
    <li>Set one or more levels of custom filters to view only specific audit logs.</li>
    <li>Search for the required audit log from the listed entries.</li></ul></td>
   </tr>
     <tr>
    <td><b>Monitoring - Agent Analytics Dashboard</b></td>
-   <td>Get actionable insights into successful and failed agent runs, average agent response time, and drill down into nodes execution data for the selected period to enable informed decisions.</td>
+   <td>Get actionable insights into successful and failed agent runs, average agent response time, and drill down into nodes execution data to enable informed decisions on agent deployments, optimize their performance, and accelerate system efficiency.</td>
    <td><ul><li>Select a single date or date range to view periodic agent performance metrics.</li>
    <li>Make performance comparison between different agent versions.</li>
    <li>Keep track of failed execution runs and investigate the reason for the same.</li>

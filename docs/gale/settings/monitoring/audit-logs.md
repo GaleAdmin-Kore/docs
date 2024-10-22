@@ -2,9 +2,13 @@
 
 ## Overview
 
-On the **Settings** console, you can monitor events related to your account's modules **and actions taken by the users linked to your account**. 
+As generative AI integrates into business operations, maintaining ethical standards and regulatory compliance is crucial. 
 
-**Audit Logs** offer a comprehensive and time-based view of all the account events. Each log entry includes:
+GALE’s comprehensive **Audit Logs** on the **Settings** console provides full visibility into user actions and system interactions, tracking logins, role changes, and model updates through dynamic time-stamped logs and tracking capabilities.
+
+This empowers admins to ensure compliance with internal policies and regulations, while proactively mitigating risks like data privacy breaches and algorithmic bias. 
+
+Each log entry includes the following to provide actionable insights that address security issues and prevent potential breaches:
 
 - Event name and category.
 - The user who performed the action.
@@ -954,6 +958,8 @@ To set a specific date as the start date for viewing audit logs, click on the de
 By default, the current day will be set as the end date. This feature allows you to easily customize the period for which you want to monitor and analyze audit logs.
 
 <img src="../images/custom-start-date.png" alt="custom start date" title="custom start date" style="border: 1px solid gray; zoom:75%;">
+
+GALE’s Audit Logs promotes transparency and accountability in AI operations, helping build trust within your organization and with external stakeholders. You can confidently scale AI initiatives, equipped with tools to manage compliance and ensure responsible use of generative AI.
 
 ## Related Information
 
