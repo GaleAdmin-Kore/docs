@@ -4,7 +4,7 @@ The Agent Monitor capabilities are shown on the following tabs:
 
 * **All runs**: It shows comprehensive data on all agent run instances and provides a comprehensive record of all the endpoint calls made to the agent. 
 
-* **Model runs**: This tab shows specific data on Gen AI node run instances, focussing on endpoint calls made to Gen AI nodes within the agent.
+* **Model runs**: This tab shows specific data on Gen AI node run instances, focusing on endpoint calls made to Gen AI nodes within the agent.
 
 Both tabs include summary metrics at the top of the page, including total runs/requests, average response times (P90 and P99), and failure rates.
 
@@ -62,7 +62,7 @@ These metrics are dependent on the selected date range, filters, and search crit
 
 ## Viewing Detailed Run Information
 
-Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
+Clicking each row in either the All runs tab or the Model runs tab opens a detailed view panel on the right. This view is similar to the Run dialog panel on the Agent flow canvas. [Learn more](https://docs.kore.ai/gale/agents/agents-flows/perform-other-actions-on-the-flow-builder/run-the-flow/).
 
 <img src="../images/agent_monitor_viewing_run_information.png" alt="Viewing detailed run information" title="Viewing detailed run information" style="border: 1px solid gray; zoom:80%;">
 
