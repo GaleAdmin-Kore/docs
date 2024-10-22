@@ -1,5 +1,7 @@
 # Audit Logs
 
+## Overview
+
 On the **Settings** console, you can monitor events related to your account's modules **and actions taken by the users linked to your account**. 
 
 **Audit Logs** offer a comprehensive and time-based view of all the account events. Each log entry includes:
@@ -22,7 +24,7 @@ Additionally, you can set **custom filters** based on a specific category, event
 <p><ul><li>The <b>IP Address</b> is fetched from the user’s current network.</li>
 <li><b>User ID</b>, <b>Role ID</b>, <b>Model ID</b>, <b>Agent ID</b>, <b>Guardrail ID</b>, <b>Integration ID</b>, and <b>Experiment ID</b> pertain to the unique identifier associated with the module’s entity in the system.</li></ul></p></div>
 
-## Account Level Audit Logs
+## Account-Level Audit Logs
 
 <div class="admonition warning">
 <p class="admonition-title">Universal Metadata</p>
@@ -559,7 +561,7 @@ Additionally, you can set **custom filters** based on a specific category, event
   </tr>
 </table>
 
-## Agent Level Audit Logs
+## Agent-Level Audit Logs
 
 <div class="admonition warning">
 <p class="admonition-title">Universal Metadata</p>
