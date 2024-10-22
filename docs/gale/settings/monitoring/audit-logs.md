@@ -822,7 +822,7 @@ To access and view audit logs, follow the steps below:
 3. Click **Monitoring** > **Audit Logs** on the left navigation menu.
 <img src="../images/audit-logs-new-dashboard.png" alt="access audit logs" title="access audit logs" style="border: 1px solid gray; zoom:75%;">
 
-## Audit Logs Information
+## Dashboard Information
 
 The **Audit Logs** Dashboard displays the following information to collectively provide a comprehensive overview of activities within your GALE account:
 
