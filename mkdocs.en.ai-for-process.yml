@@ -258,4 +258,4 @@ nav:
       - Managing Usage Limits: settings/billing/managing-usage-limits.md
     - Data: 
       - Manage Data: settings/data/manage-datasets.md
-      
+  - APIs: apis/list-of-apis.md 
