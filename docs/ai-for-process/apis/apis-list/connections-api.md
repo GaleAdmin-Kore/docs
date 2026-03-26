@@ -1,4 +1,4 @@
-[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+[:octicons-arrow-left-24: Back to API List](../list-of-apis.md)
 
 # External Model Connection APIs
 

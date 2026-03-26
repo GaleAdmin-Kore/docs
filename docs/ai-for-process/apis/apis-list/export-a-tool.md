@@ -1,12 +1,12 @@
-[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+[:octicons-arrow-left-24: Back to API List](../list-of-apis.md)
 
-# Export a Tool API
+# Export a Workflow API
 
-This API exports a tool's configuration and associated data, including its flow  for backup, sharing, or reuse. It allows users to generate an export of a specific tool along with its deployed call flow.
+This API exports a workflow's configuration and associated data, including its flow  for backup, sharing, or reuse. It allows users to generate an export of a specific workflow along with its deployed call flow.
 
 When an export request is initiated, the API triggers the export process and returns a <code>dockStatusId</code>, which can be used with the [Get Dock Status API](../apis-list/get-dock-status.md){:target="_blank"} to track the export progress. The API response also includes an <code>exportJobId</code> for tracking the specific export job.
 
-Additionally, the response provides a **download URL**. Copy and paste this URL into a browser or API client to download the exported tool file.
+Additionally, the response provides a **download URL**. Copy and paste this URL into a browser or API client to download the exported workflow file.
 
 <table>
   <tr>
@@ -18,7 +18,7 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
   <tr>
    <td><strong>Endpoint</strong>
    </td>
-   <td><code>https://{host}/api/public/tools/:{toolId}/export?flowId={callflowId}</code>
+   <td><code>https://{host}/api/public/workflow/:{workflowId}/export?flowId={callflowId}</code>
    </td>
   </tr>
   <tr>
@@ -37,15 +37,15 @@ Additionally, the response provides a **download URL**. Copy and paste this URL 
 
 **Where can I find the API key?**
 
-To use the API, you will need an API key. [Learn more](../../apis/overview.md#how-to-create-the-api-key){:target="_blank"}.
+To use the API, you will need an API key. [Learn more](../../workflows/create-a-new-api-key.md){:target="_blank"}.
 
-**How to obtain toolId or callflowId for the API?**
+**How to obtain workflowId or callflowId for the API?**
 
-1. Follow the steps mentioned [here](../../ai-agents/tools/export-a-tool.md#steps-to-export-a-tool){:target="_blank"} to export a tool.
-2. Open developer tools.
+1. Follow the steps mentioned [here](../../workflows/export-a-workflow.md#steps-to-export-a-workflow){:target="_blank"} to export a workflow.
+2. Open developer workflows.
 3. Select the **Network** tab.
 <img src="../images/developer-tools.png" alt="developer tools" title="developer tools" style="border: 1px solid gray; zoom:60%;">
-4. Monitor the Export API to capture <code>toolId</code> and <code>callflowId</code>.
+4. Monitor the Export API to capture <code>workflowId</code> and <code>callflowId</code>.
 
 
 ## Query Parameters
@@ -73,9 +73,9 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md#ho
    </td>
   </tr>
   <tr>
-   <td><strong>toolId</strong>
+   <td><strong>workflowId</strong>
    </td>
-   <td>The tool ID of the tool being exported.
+   <td>The workflow ID of the workflow being exported.
    </td>
    <td>String
    </td>
@@ -85,7 +85,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md#ho
   <tr>
    <td><strong>callflowId</strong>
    </td>
-   <td>The callflow ID for the deployed tool.
+   <td>The callflow ID for the deployed workflow.
    </td>
    <td>String
    </td>
@@ -97,7 +97,7 @@ To use the API, you will need an API key. [Learn more](../../apis/overview.md#ho
 ## Sample Request
 
 ```js
-curl --location --request POST 'https://{host}/api/public/tools/a-3xxxxxxxxxxxxxxxxxx3/export' 
+curl --location --request POST 'https://{host}/api/public/workflows/a-3xxxxxxxxxxxxxxxxxx3/export' 
 --header 'x-api-key: kg-axxxxxxx-5xx3-5xx8-bxxb-9xxxxxxxxxx-ebxxxxxx-5xxb-4xxxxxxx3' 
 --header 'Content-Type: application/json'
 ```
@@ -111,11 +111,11 @@ No parameters are passed.
 ```js
 {
    "dock-statusId": "ds-cxxxxxxf-8xx7-5xx9-8xxd-c2xxxxxxxxxd",
-   "toolId": "a-4xxxxxx9-fxx9-5xx7-axx7-9xxxxxxxxxxb",
-   "jobType": "TOOLS",
+   "workflowId": "a-4xxxxxx9-fxx9-5xx7-axx7-9xxxxxxxxxxb",
+   "jobType": "WORKFLOWS",
    "action": "EXPORT",
    "status": "IN_PROGRESS",
-   "exportJobId": "tool-ej-25xxxxx2-bxx3-5xxc-8xx4-edxxxxxxxxxf"
+   "exportJobId": "workflow-ej-25xxxxx2-bxx3-5xxc-8xx4-edxxxxxxxxxf"
 "response": {
        "downloadUrl": " https://{host}/api/v1/account/xxxxxx"
   }
@@ -136,15 +136,15 @@ No parameters are passed.
   <tr>
    <td><strong>dockStatusId</strong>
    </td>
-   <td>The unique identifier to track the status of the tool export process. 
+   <td>The unique identifier to track the status of the workflow export process. 
    </td>
    <td>String
    </td>
   </tr>
   <tr>
-   <td><strong>toolId</strong>
+   <td><strong>workflowId</strong>
    </td>
-   <td>The unique identifier for the tool.
+   <td>The unique identifier for the workflow.
    </td>
    <td>String
    </td>
@@ -160,7 +160,7 @@ No parameters are passed.
   <tr>
    <td><strong>action</strong>
    </td>
-   <td>The action that is performed on the tool.
+   <td>The action that is performed on the workflow.
    </td>
    <td>String
    </td>
@@ -184,7 +184,7 @@ No parameters are passed.
   <tr>
    <td><strong>downloadURL</strong>
    </td>
-   <td>The url to download the exported tool file.
+   <td>The url to download the exported workflow file.
    </td>
    <td>String
    </td>

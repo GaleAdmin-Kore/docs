@@ -1,4 +1,4 @@
-[:octicons-arrow-left-24: Back to API List](../../apis/list-of-apis.md)
+[:octicons-arrow-left-24: Back to API List](../list-of-apis.md)
 
 # Deploy a Model API
 
@@ -35,7 +35,7 @@ The API response includes the **model ID** and the **model deployment status**. 
 
 **Where can I find the API key?**
 
-To use the API, you will need an API key. [Learn more](../../apis/overview.md#how-to-create-the-api-key){:target="_blank"}.
+To use the API, you will need an API key. [Learn more](../../workflows/create-a-new-api-key.md){:target="_blank"}.
 
 ## Query Parameters
 
