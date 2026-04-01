@@ -53,7 +53,7 @@ To use the API, you will need an API key. [Learn more](../../workflows/create-a-
   <tr>
    <td><strong>host</strong>
    </td>
-   <td>The environment URL. For example, <code>https://agent-platform.domain.ai/</code>
+   <td>The environment URL. For example, <code>https://ai-for-process.domain.ai/</code>
    </td>
    <td>String
    </td>
